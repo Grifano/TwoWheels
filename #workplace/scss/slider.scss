@@ -1,0 +1,63 @@
+// !!! Если слайдер оказался внутри flex-элемента или же
+// !!! Сам является flex-элементом, необходимо ему (если он
+// !!! является flex-элементом) или его flex-родителю (если
+// !!! родитель является flex-элементом) прописать значение:
+// !!!
+// !!! .flex-element{
+// !!!		min-width: 0;
+// !!! }
+// !!!
+
+// !!! Чтобы сделать сам слайдер в линию, нужно обратиться
+// !!! К классам slick-list и slick-track, где для
+// !!! slick-track указать значение display: flex;
+// !!! А для slick-list размеры и обязательно overflow: hidden;
+// !!! Чтобы картинки не улетали при просмотре за размеры
+
+/* Слайдер */
+.slick-slider {
+}
+/* Слайдер запущен */
+.slick-slider.slick-initialized {
+}
+/* Ограничивающая оболочка */
+.slick-list {
+  overflow: hidden;
+}
+.slick-slide {
+}
+/* Лента слайдов */
+.slick-track {
+  display: flex;
+}
+.slick-dots {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: -10px 0px;
+  position: absolute;
+  top: 50%;
+  right: 110px;
+  @include tr(0px, -50%, 0px);
+  z-index: 15;
+
+  li {
+    padding: 10px 0px;
+  }
+  /* Элемент точки */
+  button {
+    width: 20px;
+    height: 20px;
+    background-color: transparent;
+    border: 5px solid #404040;
+    border-radius: 50%;
+    font-size: 0;
+    cursor: pointer;
+  }
+  /* Активная точка */
+  .slick-active {
+    button {
+      border: 5px solid #004cff;
+    }
+  }
+}

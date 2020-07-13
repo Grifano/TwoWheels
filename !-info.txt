@@ -1,0 +1,26 @@
+Start project: 20h30 07.07.20 -:>
+<!-- TODO: -->
+- fonts;
+!Header:
+- make cut img;
+- menu;
+- burger;
+- responsive;
+- acount (just icon);
+- search (just icon);
+- basket (just icon);
+-
+<!-- ********************************************************* -->
+<!--!- To fix: -->
+- ipad hide-hover max-width: 1024px;
+<!-- ********************************************************* -->
+<!--?- #:>Test before prodaction: -->
+- jquery re-include!;
+- adaptive;
+- link;
+- hover;
+- add more content for testing block;
+- walidator;
+- loading speed;
+- crosbrausers;
+- refacturing code;

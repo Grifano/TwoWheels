@@ -1,0 +1,167 @@
+//===+++Burger+++===
+$burger_icon: #000;
+.burger {
+  display: none;
+  position: relative;
+  width: 30px;
+  height: 20px;
+  top: 0;
+  right: 0;
+  z-index: 999;
+  span,
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    left: 0;
+    background-color: $burger_icon;
+    transition: all 0.3s ease 0s;
+  }
+  &::before {
+    top: 0;
+  }
+  &.active::before {
+    top: 9px;
+    transform: rotate(45deg);
+  }
+  &::after {
+    bottom: 0;
+  }
+  &.active::after {
+    transform: rotate(-45deg);
+    bottom: 9px;
+  }
+  span {
+    top: 9px;
+  }
+  &.active span {
+    display: none;
+  }
+  @media (max-width: 767px) {
+    display: block;
+  }
+}
+.menu {
+  display: none;
+  &.active {
+  }
+}
+//===+++/Burger+++===
+
+//****************************************
+
+//===+++ibg+++===
+.ibg {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  img {
+    display: none;
+  }
+}
+//===+++/ibg+++===
+
+//****************************************
+
+//===+++Spoilers+++===
+.spoilers {
+  padding: 50px;
+  background-color: #ccc;
+}
+.spoilers__item {
+  margin: 0px 0px 20px 0px;
+}
+.spoilers__title {
+  padding: 0px 0px 0px 30px;
+  font-size: 20px;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  position: relative;
+  cursor: pointer;
+}
+.spoilers__title::before,
+.spoilers__title::after {
+  content: "";
+  width: 10px;
+  height: 2px;
+  background-color: #000;
+  position: absolute;
+  top: 50%;
+  transform: translate(0px, -50%);
+}
+.spoilers__title::before {
+  left: 0;
+  transform: rotate(45deg);
+}
+.spoilers__title::after {
+  left: 7px;
+  transform: rotate(-45deg);
+}
+.spoilers__title.active::before,
+.spoilers__title.active::after {
+  background-color: red;
+}
+.spoilers__title.active::before {
+  transform: rotate(-45deg);
+}
+.spoilers__title.active::after {
+  transform: rotate(45deg);
+}
+.spoilers__text {
+  display: none;
+  font-size: 12px;
+  padding: 10px 0px 0px 0px;
+}
+.spoilers {
+  padding: 50px;
+  background-color: #ccc;
+}
+.spoilers__item {
+  margin: 0px 0px 20px 0px;
+}
+.spoilers__title {
+  padding: 0px 0px 0px 30px;
+  font-size: 20px;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  position: relative;
+  cursor: pointer;
+}
+.spoilers__title::before,
+.spoilers__title::after {
+  content: "";
+  width: 10px;
+  height: 2px;
+  background-color: #000;
+  position: absolute;
+  top: 50%;
+  transform: translate(0px, -50%);
+}
+.spoilers__title::before {
+  left: 0;
+  transform: rotate(45deg);
+}
+.spoilers__title::after {
+  left: 7px;
+  transform: rotate(-45deg);
+}
+.spoilers__title.active::before,
+.spoilers__title.active::after {
+  background-color: red;
+}
+.spoilers__title.active::before {
+  transform: rotate(-45deg);
+}
+.spoilers__title.active::after {
+  transform: rotate(45deg);
+}
+.spoilers__text {
+  display: none;
+  font-size: 12px;
+  padding: 10px 0px 0px 0px;
+}
+//===+++/Spoilers+++===
+
+//****************************************
