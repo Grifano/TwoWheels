@@ -9,7 +9,10 @@ Start project: 20h30 07.07.20 -:>
 - acount (just icon);
 - search (just icon);
 - basket (just icon);
--
+d) Fuel:
+!Product;
+- filter;
+- chek categories;
 <!-- ********************************************************* -->
 <!--!- To fix: -->
 - ipad hide-hover max-width: 1024px;
