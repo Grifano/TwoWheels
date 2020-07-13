@@ -318,7 +318,7 @@ mainblock();
 //****************************************
 
 // === Filtr & lighted active item ===
-$('.filter__item').click(function (event) {
+$('.filter__link').click(function (event) {
 	var i = $(this).data('filter'); // $(this) - значит к только этому ('.filter__item').
 	if (i == 1) { // если class .filter__item имеет data-filter="1" - значит...
 		$('.product__column').show(); // ...показать колонки.
@@ -327,7 +327,7 @@ $('.filter__item').click(function (event) {
 		$('.product__column.f_' + i).show(); // но показать те которые имеют клас f_ + i
 	}
 	// Подвсветка активного фильтра
-	$('.filter__item').removeClass('active');
+	$('.filter__link').removeClass('active');
 	$(this).addClass('active');
 	return false;
 });
