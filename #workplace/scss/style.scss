@@ -43,8 +43,7 @@ $col: #00b5ab;
 //****************************************
 
 //===+++Повторяющиеся стили+++===
-.gallery {
-}
+
 //===+++/Повторяющиеся стили+++===
 //=======================================================================
 //===+++Основные стили+++===
@@ -230,7 +229,6 @@ $col: #00b5ab;
 	&__item-product {
 	}
 }
-
 .filter {
 	padding: 0px 0px 48px 0px;
 	border-bottom: 2px solid #b2b2b2;
@@ -268,6 +266,9 @@ $col: #00b5ab;
 	display: block;
 	padding: 50px 40px 30px;
 	background-color: #ffffff;
+	@media (max-width: 375px) {
+		padding: 20px 10px 10px;
+	}
 	&__body {
 		min-height: 428px;
 		display: flex;

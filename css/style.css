@@ -369,6 +369,11 @@ h6 {
   padding: 50px 40px 30px;
   background-color: #ffffff;
 }
+@media (max-width: 375px) {
+  .item-product {
+    padding: 20px 10px 10px;
+  }
+}
 .item-product__body {
   min-height: 428px;
   display: flex;
