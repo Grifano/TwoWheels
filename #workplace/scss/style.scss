@@ -266,8 +266,14 @@ $col: #00b5ab;
 	display: block;
 	padding: 50px 40px 30px;
 	background-color: #ffffff;
+	@include anim(0.3s, 0s);
 	@media (max-width: 375px) {
 		padding: 20px 10px 10px;
+	}
+	@media (min-width: 1023px) {
+		&:hover {
+			box-shadow: inset 0px 0px 0px 5px #004cff;
+		}
 	}
 	&__body {
 		min-height: 428px;

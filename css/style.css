@@ -368,10 +368,20 @@ h6 {
   display: block;
   padding: 50px 40px 30px;
   background-color: #ffffff;
+  -webkit-transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  -ms-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
 }
 @media (max-width: 375px) {
   .item-product {
     padding: 20px 10px 10px;
+  }
+}
+@media (min-width: 1023px) {
+  .item-product:hover {
+    box-shadow: inset 0px 0px 0px 5px #004cff;
   }
 }
 .item-product__body {
