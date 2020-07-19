@@ -11,10 +11,21 @@ Start project: 20h30 07.07.20 -:>
 - basket (just icon);
 d) Fuel:
 !Product;
-- filter;
-- chek categories;
+d) filter;
+d) chek categories;
+!up-to:
+- адаптивный шрифт;
+d) cut image;
+- corected margin&padding for text;
+!Save-form:
+- cut image;
+- form like hover;
+- form vadidating;
+-
+
 <!-- ********************************************************* -->
 <!--!- To fix: -->
+- fix margin for fuel;
 - ipad hide-hover max-width: 1024px;
 <!-- ********************************************************* -->
 <!--?- #:>Test before prodaction: -->
