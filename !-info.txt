@@ -21,12 +21,15 @@ d) cut image;
 - cut image;
 - form like hover;
 - form vadidating;
+!Service:
+- adaptive;
 -
 
 <!-- ********************************************************* -->
 <!--!- To fix: -->
 - fix margin for fuel;
 - ipad hide-hover max-width: 1024px;
+- item-service by flex;
 <!-- ********************************************************* -->
 <!--?- #:>Test before prodaction: -->
 - jquery re-include!;
