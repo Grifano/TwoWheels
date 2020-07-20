@@ -544,31 +544,44 @@ $col: #00b5ab;
 	padding: 60px 0px 50px 0px;
 	&__row {
 		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-wrap: wrap;
 		margin: 0px -11px;
 	}
 
 	&__column {
-		flex: 1 1 33.333%;
+		flex: 0 1 33.333%;
 		padding: 0px 11px;
+		margin: 0px 0px 22px 0px;
+		@media (max-width: 767px) {
+			&:last-child {
+				margin: 0;
+			}
+		}
 	}
 
 	&__item-service {
 	}
 }
 .item-service {
+	max-width: 335px;
 	height: 100%;
-	padding: 31.5px 35px 35.5px 38px;
+	display: flex;
+	justify-content: center;
+	// flex-direction: column;
+	padding: 31.5px 0px 35.5px;
 	background-color: #fff;
 	border: 3px solid #707070;
 
 	@media (max-width: 940px) {
-		padding: 21.5px 25px 25.5px 28px;
+		padding: 21.5px 0px 25.5px;
 	}
 	@media (max-width: 390px) {
-		padding: 21.5px 25px 25.5px 18px;
+		padding: 21.5px 0px 25.5px;
 	}
 	&__body {
-		height: 100%;
+		min-height: 97px;
 		padding: 0px 0px 0px 125px;
 		&_shipping {
 			background: url("../img/Service/icons/01.svg") 0 50% no-repeat;
@@ -584,16 +597,18 @@ $col: #00b5ab;
 		}
 	}
 	&__content {
+		padding: 0px 5px;
+		max-width: 140px;
 		min-height: 100%;
 		display: flex;
 		flex-direction: column;
 	}
 	&__title {
+		margin: 0px 0px 11.5px 0px;
 		color: #262626;
 		font-size: 13px;
 		font-weight: 700;
 		line-height: 18px;
-		margin: 0px 0px 12.5px 0px;
 		flex: 1 0 100%;
 	}
 

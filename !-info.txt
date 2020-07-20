@@ -1,6 +1,6 @@
 Start project: 20h30 07.07.20 -:>
 <!-- TODO: -->
-- fonts;
+d) fonts;
 !Header:
 - make cut img;
 - menu;
