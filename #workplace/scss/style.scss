@@ -624,13 +624,18 @@ $col: #00b5ab;
 		flex-wrap: wrap;
 	}
 	&__column {
-		flex: 1 1 33.333%;
+		flex: 0 0 33.333%;
 	}
 	&__image {
-		max-width: 480px;
-		object-fit: cover;
+		padding: 0px 0px 100% 0px;
+		position: relative;
 		img {
-			max-width: 100%;
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			top: 0;
+			left: 0;
+			object-fit: cover;
 		}
 	}
 	@media (max-width: 320px) {
