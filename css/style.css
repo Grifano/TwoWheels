@@ -269,20 +269,26 @@ h6 {
 }
 .footer__column {
   flex: 1 1 25%;
+  display: flex;
+  flex-direction: column;
+}
+.footer__about-us {
+  margin: 0px 0px 70px 0px;
 }
 .footer__info {
-  margin: 0px 0px 0px 110px;
+  align-self: flex-end;
 }
 .footer__returns {
-  margin: 0px 0px 0px 112px;
+  align-self: flex-end;
+  margin: 0px 70pxgit 0px 0px;
 }
 .footer__bottom-footer {
   border-top: 2px solid #b2b2b2;
 }
 
 .about-us {
+  padding: 0px 5px;
   max-width: 265px;
-  padding: 0px 5px 70px;
 }
 .about-us__text, .contacts__address {
   line-height: 33.75px;
@@ -294,6 +300,9 @@ h6 {
   margin: 0;
 }
 
+.follow-us {
+  padding: 0px 5px;
+}
 .social__list {
   display: flex;
   margin: 0px -8px;
@@ -330,6 +339,10 @@ h6 {
   }
 }
 
+.info {
+  max-width: 165px;
+  padding: 0px 5px;
+}
 .info__list li, .returns__list li {
   margin: 0px 0px 12px 0px;
 }
@@ -352,6 +365,10 @@ h6 {
   }
 }
 
+.returns {
+  padding: 0px 5px;
+  white-space: nowrap;
+}
 .contacts__logo {
   margin: 0px 0px 59px 0px;
 }

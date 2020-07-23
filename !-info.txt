@@ -18,8 +18,8 @@ d) chek categories;
 d) cut image;
 - corected margin&padding for text;
 !Save-form:
-- cut image;
-- form like hover;
+d) cut image;
+d) form like hover;
 - form vadidating;
 !Service:
 - adaptive;

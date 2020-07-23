@@ -64,21 +64,28 @@
   }
 
   &__column {
+    // border: 1px solid red;
     flex: 1 1 25%;
+    display: flex;
+    flex-direction: column;
   }
 
   &__about-us {
+    margin: 0px 0px 70px 0px;
   }
 
   &__follow-us {
   }
 
   &__info {
-    margin: 0px 0px 0px 110px;
+    align-self: flex-end;
+    // margin: 0px 0px 0px 110px;
   }
 
   &__returns {
-    margin: 0px 0px 0px 112px;
+    align-self: flex-end;
+    margin: 0px 70pxgit 0px 0px;
+    // margin: 0px 0px 0px 112px;
   }
 
   &__contacts {
@@ -88,8 +95,8 @@
   }
 }
 .about-us {
+  padding: 0px 5px;
   max-width: 265px;
-  padding: 0px 5px 70px;
   &__title {
   }
   &__text {
@@ -104,6 +111,7 @@
 }
 
 .follow-us {
+  padding: 0px 5px;
   &__title {
   }
 
@@ -145,6 +153,8 @@
   }
 }
 .info {
+  max-width: 165px;
+  padding: 0px 5px;
   &__title {
   }
 
@@ -170,6 +180,8 @@
   }
 }
 .returns {
+  padding: 0px 5px;
+  white-space: nowrap;
   &__title {
   }
 
