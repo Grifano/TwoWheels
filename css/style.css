@@ -1103,13 +1103,13 @@ h6 {
   min-width: 91px;
 }
 .item-service__icon_shipping {
-  background: url("../../img/Service/icons/01.svg") 50% 50% no-repeat;
+  background: url("../img/Service/icons/01.svg") 50% 50% no-repeat;
 }
 .item-service__icon_money-back {
-  background: url("../../img/Service/icons/02.svg") 50% 50% no-repeat;
+  background: url("../img/Service/icons/02.svg") 50% 50% no-repeat;
 }
 .item-service__icon_support {
-  background: url("../../img/Service/icons/03.svg") 50% 50% no-repeat;
+  background: url("../img/Service/icons/03.svg") 50% 50% no-repeat;
 }
 .item-service__content {
   flex: 0 1 155px;
