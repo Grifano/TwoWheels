@@ -284,10 +284,10 @@ $(document).ready(function () {
 // === Spoilers ===
 
 $(document).ready(function () {
-	$('.spoilers__title').click(function (event) {
-		if ($('.spoilers').hasClass('one')) { // .one - class for en/dis akordeon
-			$('.spoilers__title').not($(this)).removeClass('active');
-			$('.spoilers__text').not($(this).next()).slideUp(300);
+	$('.spoiler__title').click(function (event) {
+		if ($('.spoiler').hasClass('one')) { // .one - class for en/dis akordeon
+			$('.spoiler__title').not($(this)).removeClass('active');
+			$('.spoiler__text').not($(this).next()).slideUp(300);
 		}
 		$(this).toggleClass('active').next().slideToggle(300);
 	});

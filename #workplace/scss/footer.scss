@@ -4,16 +4,20 @@
   font-weight: 600;
   line-height: 30px;
   margin: 0px 0px 40px 0px;
+  @media (max-width: 997px) {
+    margin: 0px 0px 20px 0px;
+  }
 }
 .bottom-footer {
   padding: 50px 0px 60px;
+  @media (max-width: 997px) {
+    padding: 12.5px 0px 15px;
+  }
   &__row {
     display: flex;
-    // justify-content: space-between;
     @media (max-width: 678px) {
       flex-wrap: wrap;
       justify-content: center;
-      align-items: center;
     }
   }
 
@@ -25,7 +29,7 @@
     @media (max-width: 678px) {
       &:first-child {
         display: flex;
-        justify-content: space-between;
+        justify-content: space-around;
       }
     }
   }
@@ -58,44 +62,86 @@
   padding: 125px 45px 0px;
   color: #ffffff;
   font-size: 19px;
+  @media (max-width: 997px) {
+    padding: 45px 15px 0px;
+  }
+  @media (max-width: 385px) {
+    padding: 25px 5px 0px;
+  }
   &__top {
     display: flex;
     margin: 0px 0px 65px 0px;
+    @media (max-width: 997px) {
+      flex-wrap: wrap;
+      margin: 0px 0px 20px 0px;
+    }
   }
 
   &__column {
-    // border: 1px solid red;
+    border: 1px solid red;
     flex: 1 1 25%;
     display: flex;
     flex-direction: column;
+    @media (max-width: 997px) {
+      flex: 1 1 100%;
+      padding: 0px 0px 0px 30px;
+      &:nth-child(1) {
+        order: 3;
+      }
+      &:nth-child(2) {
+        order: 1;
+      }
+      &:nth-child(3) {
+        order: 2;
+      }
+      &:nth-child(4) {
+        order: 4;
+      }
+    }
   }
 
   &__about-us {
     margin: 0px 0px 70px 0px;
+    @media (max-width: 997px) {
+      margin: 0;
+    }
   }
 
   &__follow-us {
+    @media (max-width: 997px) {
+      margin: 0px 0px 20px 0px;
+      @include tr(-15px, 0px, 0px);
+    }
   }
 
   &__info {
     align-self: flex-end;
-    // margin: 0px 0px 0px 110px;
+    @media (max-width: 997px) {
+      margin: 0;
+      align-self: auto;
+    }
   }
 
   &__returns {
     align-self: flex-end;
-    margin: 0px 70pxgit 0px 0px;
+    margin: 0px 70px 0px 0px;
     // margin: 0px 0px 0px 112px;
+    @media (max-width: 997px) {
+      margin: 0;
+      align-self: auto;
+    }
   }
 
   &__contacts {
+    @media (max-width: 997px) {
+      @include tr(-15px, 0px, 0px);
+    }
   }
   &__bottom-footer {
     border-top: 2px solid #b2b2b2;
   }
 }
 .about-us {
-  padding: 0px 5px;
   max-width: 265px;
   &__title {
   }
@@ -105,14 +151,22 @@
       margin: 0px 0px 10px 0px;
       &:last-child {
         margin: 0;
+        @media (max-width: 997px) {
+          margin: 0px 0px 20px 0px;
+        }
       }
     }
+  }
+  @media (max-width: 997px) {
+    max-width: 100%;
   }
 }
 
 .follow-us {
-  padding: 0px 5px;
   &__title {
+    @media (max-width: 997px) {
+      display: none;
+    }
   }
 
   &__social {
@@ -122,6 +176,9 @@
   &__list {
     display: flex;
     margin: 0px -8px;
+    @media (max-width: 997px) {
+      justify-content: center;
+    }
     li {
       padding: 0px 8px;
     }
@@ -153,8 +210,6 @@
   }
 }
 .info {
-  max-width: 165px;
-  padding: 0px 5px;
   &__title {
   }
 
@@ -180,7 +235,7 @@
   }
 }
 .returns {
-  padding: 0px 5px;
+  min-width: 122px;
   white-space: nowrap;
   &__title {
   }
@@ -194,13 +249,19 @@
   }
 }
 .contacts {
+  @media (max-width: 997px) {
+    text-align: center;
+  }
   &__logo {
     margin: 0px 0px 59px 0px;
+    @media (max-width: 997px) {
+      margin: 0px 0px 20px 0px;
+    }
   }
 
   &__address {
     @extend .about-us__text;
-    margin: 0px 0px 30px 0px;
+    margin: 0px 0px 20px 0px;
   }
 
   &__payment {
@@ -209,7 +270,11 @@
 .payment {
   &__list {
     display: flex;
+    justify-content: space-between;
     margin: 0px -10px;
+    @media (max-width: 997px) {
+      justify-content: center;
+    }
     li {
       padding: 0px 10px;
     }

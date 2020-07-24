@@ -66,101 +66,45 @@ $burger_icon: #000;
 //****************************************
 
 //===+++Spoilers+++===
-.spoilers {
-  padding: 50px;
-  background-color: #ccc;
+.spoiler {
+  border: 1px solid red;
 }
-.spoilers__item {
-  margin: 0px 0px 20px 0px;
+.spoiler__item {
+  // margin: 0px 0px 20px 0px;
 }
-.spoilers__title {
-  padding: 0px 0px 0px 30px;
-  font-size: 20px;
-  letter-spacing: 5px;
-  text-transform: uppercase;
+.spoiler__title {
+  // padding: 0px 0px 0px 30px;
   position: relative;
   cursor: pointer;
 }
-.spoilers__title::before,
-.spoilers__title::after {
+.spoiler__title::before,
+.spoiler__title::after {
   content: "";
   width: 10px;
   height: 2px;
-  background-color: #000;
+  background-color: #fff;
   position: absolute;
   top: 50%;
+  left: -30px;
   transform: translate(0px, -50%);
 }
-.spoilers__title::before {
-  left: 0;
-  transform: rotate(45deg);
-}
-.spoilers__title::after {
-  left: 7px;
+.spoiler__title::before {
+  left: -30px;
   transform: rotate(-45deg);
 }
-.spoilers__title.active::before,
-.spoilers__title.active::after {
-  background-color: red;
-}
-.spoilers__title.active::before {
-  transform: rotate(-45deg);
-}
-.spoilers__title.active::after {
+.spoiler__title::after {
+  left: -23px;
   transform: rotate(45deg);
 }
-.spoilers__text {
-  display: none;
-  font-size: 12px;
-  padding: 10px 0px 0px 0px;
+.spoiler__title.active::before,
+.spoiler__title.active::after {
+  background-color: #004cff;
 }
-.spoilers {
-  padding: 50px;
-  background-color: #ccc;
-}
-.spoilers__item {
-  margin: 0px 0px 20px 0px;
-}
-.spoilers__title {
-  padding: 0px 0px 0px 30px;
-  font-size: 20px;
-  letter-spacing: 5px;
-  text-transform: uppercase;
-  position: relative;
-  cursor: pointer;
-}
-.spoilers__title::before,
-.spoilers__title::after {
-  content: "";
-  width: 10px;
-  height: 2px;
-  background-color: #000;
-  position: absolute;
-  top: 50%;
-  transform: translate(0px, -50%);
-}
-.spoilers__title::before {
-  left: 0;
+.spoiler__title.active::before {
   transform: rotate(45deg);
 }
-.spoilers__title::after {
-  left: 7px;
+.spoiler__title.active::after {
   transform: rotate(-45deg);
-}
-.spoilers__title.active::before,
-.spoilers__title.active::after {
-  background-color: red;
-}
-.spoilers__title.active::before {
-  transform: rotate(-45deg);
-}
-.spoilers__title.active::after {
-  transform: rotate(45deg);
-}
-.spoilers__text {
-  display: none;
-  font-size: 12px;
-  padding: 10px 0px 0px 0px;
 }
 //===+++/Spoilers+++===
 
