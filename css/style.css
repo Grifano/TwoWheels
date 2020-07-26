@@ -1217,6 +1217,12 @@ h6 {
   display: none;
 }
 
+@media (max-width: 997px) {
+  .spoiler__item {
+    display: none;
+  }
+}
+
 .spoiler__title {
   position: relative;
   cursor: pointer;
@@ -1227,32 +1233,41 @@ h6 {
   content: "";
   width: 10px;
   height: 2px;
-  background-color: #fff;
+  background-color: #004cff;
   position: absolute;
   top: 50%;
   left: -30px;
   transform: translate(0px, -50%);
+  opacity: 0;
+  visibility: hidden;
+}
+@media (max-width: 997px) {
+  .spoiler__title::before,
+.spoiler__title::after {
+    opacity: 1;
+    visibility: visible;
+  }
 }
 
 .spoiler__title::before {
   left: -30px;
-  transform: rotate(-45deg);
+  transform: rotate(45deg);
 }
 
 .spoiler__title::after {
   left: -23px;
-  transform: rotate(45deg);
+  transform: rotate(-45deg);
 }
 
 .spoiler__title.active::before,
 .spoiler__title.active::after {
-  background-color: #004cff;
+  background-color: #fff;
 }
 
 .spoiler__title.active::before {
-  transform: rotate(45deg);
+  transform: rotate(-45deg);
 }
 
 .spoiler__title.active::after {
-  transform: rotate(-45deg);
+  transform: rotate(45deg);
 }
