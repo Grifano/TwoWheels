@@ -1,0 +1,57 @@
+.header {
+  &__top {
+  }
+}
+.top-header {
+  width: 100%;
+  position: fixed;
+  z-index: 999;
+  background-color: #262626;
+  &__row {
+    min-height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__column {
+  }
+  &__text {
+    font-size: 16px;
+    font-weight: 500;
+    color: rgb(248, 248, 248);
+    line-height: 1.2;
+    p {
+    }
+  }
+  &__action-header {
+  }
+}
+.action-header {
+  &__row {
+    display: flex;
+    margin: 0px -15px;
+    li {
+      padding: 0px 15px;
+    }
+  }
+
+  &__account {
+  }
+
+  &__search {
+  }
+
+  &__basket {
+    position: relative;
+    span {
+      position: absolute;
+      top: -9px;
+      left: 6px;
+      font-size: 10px;
+      padding: 5px 10px;
+      border-radius: 20px;
+      color: rgb(248, 248, 248);
+      background-color: #004cff;
+    }
+  }
+}

@@ -4,13 +4,13 @@
   font-weight: 600;
   line-height: 30px;
   margin: 0px 0px 40px 0px;
-  @media (max-width: 997px) {
+  @media (max-width: 1023px) {
     margin: 0px 0px 20px 0px;
   }
 }
 .bottom-footer {
   padding: 50px 0px 60px;
-  @media (max-width: 997px) {
+  @media (max-width: 1023px) {
     padding: 12.5px 0px 15px;
   }
   &__row {
@@ -62,7 +62,7 @@
   padding: 125px 45px 0px;
   color: #ffffff;
   font-size: 19px;
-  @media (max-width: 997px) {
+  @media (max-width: 1023px) {
     padding: 45px 15px 0px;
   }
   @media (max-width: 385px) {
@@ -71,7 +71,7 @@
   &__top {
     display: flex;
     margin: 0px 0px 65px 0px;
-    @media (max-width: 997px) {
+    @media (max-width: 1023px) {
       flex-wrap: wrap;
       margin: 0px 0px 20px 0px;
     }
@@ -81,7 +81,7 @@
     flex: 1 1 25%;
     display: flex;
     flex-direction: column;
-    @media (max-width: 997px) {
+    @media (max-width: 1023px) {
       flex: 1 1 100%;
       padding: 0px 0px 0px 30px;
       &:nth-child(1) {
@@ -101,13 +101,13 @@
 
   &__about-us {
     margin: 0px 0px 70px 0px;
-    @media (max-width: 997px) {
+    @media (max-width: 1023px) {
       margin: 0;
     }
   }
 
   &__follow-us {
-    @media (max-width: 997px) {
+    @media (max-width: 1023px) {
       margin: 0px 0px 20px 0px;
       @include tr(-15px, 0px, 0px);
     }
@@ -115,7 +115,7 @@
 
   &__info {
     align-self: flex-end;
-    @media (max-width: 997px) {
+    @media (max-width: 1023px) {
       margin: 0;
       align-self: auto;
     }
@@ -125,14 +125,14 @@
     align-self: flex-end;
     margin: 0px 70px 0px 0px;
     // margin: 0px 0px 0px 112px;
-    @media (max-width: 997px) {
+    @media (max-width: 1023px) {
       margin: 0;
       align-self: auto;
     }
   }
 
   &__contacts {
-    @media (max-width: 997px) {
+    @media (max-width: 1023px) {
       @include tr(-15px, 0px, 0px);
     }
   }
@@ -150,20 +150,20 @@
       margin: 0px 0px 10px 0px;
       &:last-child {
         margin: 0;
-        @media (max-width: 997px) {
+        @media (max-width: 1023px) {
           margin: 0px 0px 20px 0px;
         }
       }
     }
   }
-  @media (max-width: 997px) {
+  @media (max-width: 1023px) {
     max-width: 100%;
   }
 }
 
 .follow-us {
   &__title {
-    @media (max-width: 997px) {
+    @media (max-width: 1023px) {
       display: none;
     }
   }
@@ -175,7 +175,7 @@
   &__list {
     display: flex;
     margin: 0px -8px;
-    @media (max-width: 997px) {
+    @media (max-width: 1023px) {
       justify-content: center;
     }
     li {
@@ -248,12 +248,12 @@
   }
 }
 .contacts {
-  @media (max-width: 997px) {
+  @media (max-width: 1023px) {
     text-align: center;
   }
   &__logo {
     margin: 0px 0px 59px 0px;
-    @media (max-width: 997px) {
+    @media (max-width: 1023px) {
       margin: 0px 0px 20px 0px;
     }
   }
@@ -271,7 +271,7 @@
     display: flex;
     justify-content: space-between;
     margin: 0px -10px;
-    @media (max-width: 997px) {
+    @media (max-width: 1023px) {
       justify-content: center;
     }
     li {
