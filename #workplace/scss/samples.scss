@@ -75,7 +75,6 @@ $burger_icon: #000;
   }
 }
 .spoiler__title {
-  // padding: 0px 0px 0px 30px;
   position: relative;
   cursor: pointer;
 }
@@ -87,7 +86,7 @@ $burger_icon: #000;
   background-color: #004cff;
   position: absolute;
   top: 50%;
-  left: -30px;
+  left: 0px;
   transform: translate(0px, -50%);
   opacity: 0;
   visibility: hidden;
@@ -97,11 +96,11 @@ $burger_icon: #000;
   }
 }
 .spoiler__title::before {
-  left: -30px;
+  left: -26px;
   transform: rotate(45deg);
 }
 .spoiler__title::after {
-  left: -23px;
+  left: -20px;
   transform: rotate(-45deg);
 }
 .spoiler__title.active::before,

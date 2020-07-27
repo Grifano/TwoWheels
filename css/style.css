@@ -327,19 +327,25 @@ h6 {
 }
 @media (max-width: 1023px) {
   .footer__top {
-    flex-wrap: wrap;
+    justify-content: center;
     margin: 0px 0px 20px 0px;
+  }
+}
+@media (max-width: 650px) {
+  .footer__top {
+    margin: 0px 0px 20px 0px;
+    flex-wrap: wrap;
   }
 }
 .footer__column {
   flex: 1 1 25%;
   display: flex;
+  align-items: center;
   flex-direction: column;
 }
 @media (max-width: 1023px) {
   .footer__column {
     flex: 1 1 100%;
-    padding: 0px 0px 0px 30px;
   }
   .footer__column:nth-child(1) {
     order: 3;
@@ -352,6 +358,13 @@ h6 {
   }
   .footer__column:nth-child(4) {
     order: 4;
+    display: none;
+  }
+}
+@media (max-width: 650px) {
+  .footer__column {
+    align-items: flex-start;
+    padding: 0px 0px 0px 30px;
   }
 }
 .footer__about-us {
@@ -365,11 +378,6 @@ h6 {
 @media (max-width: 1023px) {
   .footer__follow-us {
     margin: 0px 0px 20px 0px;
-    transform: translate3d(-15px, 0px, 0px);
-    -webkit-transform: translate3d(-15px, 0px, 0px);
-    -ms-transform: translate3d(-15px, 0px, 0px);
-    -o-transform: translate3d(-15px, 0px, 0px);
-    -moz-transform: translate3d(-15px, 0px, 0px);
   }
 }
 .footer__info {
@@ -391,21 +399,17 @@ h6 {
     align-self: auto;
   }
 }
-@media (max-width: 1023px) {
-  .footer__contacts {
-    transform: translate3d(-15px, 0px, 0px);
-    -webkit-transform: translate3d(-15px, 0px, 0px);
-    -ms-transform: translate3d(-15px, 0px, 0px);
-    -o-transform: translate3d(-15px, 0px, 0px);
-    -moz-transform: translate3d(-15px, 0px, 0px);
-  }
-}
 .footer__bottom-footer {
   border-top: 2px solid #b2b2b2;
 }
 
 .about-us {
   max-width: 265px;
+}
+@media (min-width: 1023px) {
+  .about-us__title {
+    text-align: center;
+  }
 }
 .about-us__text, .contacts__address {
   line-height: 33.75px;
@@ -422,16 +426,16 @@ h6 {
   }
 }
 @media (max-width: 1023px) {
-  .about-us {
-    max-width: 100%;
+  .follow-us__social {
+    margin: 0px 0px 20px 0px;
+  }
+}
+@media (max-width: 1023px) {
+  .follow-us {
+    text-align: center;
   }
 }
 
-@media (max-width: 1023px) {
-  .follow-us__title {
-    display: none;
-  }
-}
 .social__list {
   display: flex;
   margin: 0px -8px;
@@ -515,6 +519,12 @@ h6 {
 .contacts__address {
   margin: 0px 0px 20px 0px;
 }
+@media (max-width: 1023px) {
+  .contacts__payment {
+    margin: 0px 0px 40px 0px;
+  }
+}
+
 .payment__list {
   display: flex;
   justify-content: space-between;
@@ -1275,7 +1285,7 @@ h6 {
   background-color: #004cff;
   position: absolute;
   top: 50%;
-  left: -30px;
+  left: 0px;
   transform: translate(0px, -50%);
   opacity: 0;
   visibility: hidden;
@@ -1289,12 +1299,12 @@ h6 {
 }
 
 .spoiler__title::before {
-  left: -30px;
+  left: -26px;
   transform: rotate(45deg);
 }
 
 .spoiler__title::after {
-  left: -23px;
+  left: -20px;
   transform: rotate(-45deg);
 }
 

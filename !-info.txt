@@ -29,6 +29,7 @@ d) adaptive;
 <!--!- To fix: -->
 - fix margin for fuel;
 - ipad hide-hover max-width: 1024px;
+- about-us click display: block; need display:flex;
 d) item-service by flex;
 <!-- ********************************************************* -->
 <!--?- #:>Test before prodaction: -->
