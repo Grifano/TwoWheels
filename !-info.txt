@@ -25,6 +25,9 @@ d) !Service:
 d) adaptive;
 !footer:
 - spoilers, make script JS addClass on max-width 997;
+<!-- *** ---JS--- ****************************************** -->
+#footer:
+- event click addClass active in spoiler__title;
 <!-- ********************************************************* -->
 <!--!- To fix: -->
 - fix margin for fuel;

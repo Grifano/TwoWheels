@@ -1,5 +1,5 @@
 //===+++Burger+++===
-$burger_icon: #000;
+$burger_icon: #fff;
 .burger {
   display: none;
   position: relative;
@@ -41,11 +41,6 @@ $burger_icon: #000;
   }
   @media (max-width: 767px) {
     display: block;
-  }
-}
-.menu {
-  display: none;
-  &.active {
   }
 }
 //===+++/Burger+++===

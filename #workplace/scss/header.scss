@@ -1,19 +1,28 @@
 .header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 999;
   &__top {
+  }
+  &__bottom-header {
   }
 }
 .top-header {
-  width: 100%;
-  position: fixed;
-  z-index: 999;
   background-color: #262626;
   &__row {
     min-height: 80px;
+    margin: 0px -5px;
     display: flex;
     align-items: center;
-    justify-content: space-between;
   }
   &__column {
+    flex: 1 1 100%;
+    padding: 0px 5px;
+    &:last-child {
+      flex: 1 1 auto;
+    }
   }
   &__text {
     font-size: 16px;
@@ -21,6 +30,10 @@
     color: rgb(248, 248, 248);
     line-height: 1.2;
     p {
+      padding: 0px 10px;
+    }
+    @media (max-width: 767px) {
+      display: none;
     }
   }
   &__action-header {
@@ -44,14 +57,107 @@
   &__basket {
     position: relative;
     span {
+      padding: 4px 8px;
+      font-weight: 500;
+      font-size: 10px;
+      color: rgb(248, 248, 248);
+      border-radius: 20px;
+      background-color: #004cff;
       position: absolute;
       top: -9px;
       left: 6px;
-      font-size: 10px;
-      padding: 5px 10px;
-      border-radius: 20px;
-      color: rgb(248, 248, 248);
-      background-color: #004cff;
     }
   }
 }
+.bottom-header {
+  // padding: 115px 0px 0px 0px;
+  font-family: "Teko";
+  &__row {
+    display: flex;
+    align-items: center;
+  }
+
+  &__column {
+    border: 1px solid red;
+    flex: 1 1 auto;
+    &:first-child {
+      align-self: flex-start;
+    }
+    &:nth-child(2) {
+      flex-basis: 100%;
+    }
+  }
+
+  &__logo {
+    display: block;
+    @include anim(0.3s, 0s);
+    @media (min-width: 1024px) {
+      &:hover {
+        @include scale(1.1);
+      }
+    }
+  }
+
+  &__menu {
+  }
+
+  &__button {
+    min-width: 200px;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+  }
+}
+.menu {
+  &__list {
+    min-height: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px -25px;
+    li {
+      border: 1px solid red;
+      padding: 0px 25 / 1440 * 100vw;
+      position: relative;
+      @media (min-width: 1440px) {
+        padding: 0px 25px;
+      }
+      &::after {
+        content: "";
+        display: block;
+        width: 10px;
+        height: 10px;
+        background-color: #004cff;
+        position: absolute;
+        top: 50%;
+        left: -5px;
+        margin: -7px 0px 0px 0px;
+        @include rotate(45deg);
+      }
+      &:first-child {
+        &::after {
+          display: none;
+        }
+      }
+    }
+  }
+
+  &__link {
+    display: block;
+    font-size: 30px;
+    color: #404040;
+    font-weight: 700;
+    line-height: 1.2;
+    text-transform: uppercase;
+    @include anim(0.3s, 0s);
+    &_active {
+      color: #004cff;
+    }
+    @media (min-width: 1024px) {
+      &:hover {
+        color: #fff;
+        text-decoration: underline;
+      }
+    }
+  }
+}
+// ------------------------------------------

@@ -80,9 +80,6 @@
       flex-wrap: wrap;
     }
   }
-  &__middle {
-  }
-
   &__column {
     flex: 1 1 25%;
     display: flex;
@@ -141,8 +138,6 @@
     }
   }
 
-  &__contacts {
-  }
   &__bottom-footer {
     border-top: 2px solid #b2b2b2;
   }
@@ -172,8 +167,6 @@
 }
 
 .follow-us {
-  &__title {
-  }
   &__social {
     @media (max-width: 1023px) {
       margin: 0px 0px 20px 0px;
@@ -221,9 +214,6 @@
   }
 }
 .info {
-  &__title {
-  }
-
   &__list {
     li {
       margin: 0px 0px 12px 0px;
@@ -248,9 +238,6 @@
 .returns {
   min-width: 122px;
   white-space: nowrap;
-  &__title {
-  }
-
   &__list {
     @extend .info__list;
   }
