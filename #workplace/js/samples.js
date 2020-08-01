@@ -398,4 +398,15 @@ for (var i = 0; i < langLink.length; i++) {
 // x.addListener(myFunction) // Attach listener function on state changes
 //=== /Transfer block ===
 
+
+//****************************************
+
+// === Click anyware ===
+$(document).on('click touchstart', function (e) {
+	if (!$(e.target).is("*")) {
+		$('.header__menu').removeClass('active');
+	};
+});
+// === /Click anyware ===
+
 //****************************************
