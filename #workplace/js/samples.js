@@ -119,7 +119,7 @@ ibg();
 // === #Burger icon click action ===
 $(document).ready(function () {
 	$('.burger').click(function (event) {
-		$('.burger, .menu').toggleClass('active');
+		$('.burger, .header__menu').toggleClass('active');
 		$('body').toggleClass('lock');
 	});
 });
