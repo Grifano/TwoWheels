@@ -82,7 +82,7 @@
 	@media (max-width: 767px) {
 		font-size: calc(#{$mobSize + px} + #{$addMobSize} * ((100vw - 320px) / #{$maxWidth}));
 	}
-	@media (max-width: 767px) {
+	@media (min-width: 767px) {
 		font-size: calc(#{$mobSize + px} + #{$addSize} * (100vw / #{$maxWidth}));
 	}
 }

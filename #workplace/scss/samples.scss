@@ -110,4 +110,27 @@ $burger_icon: #fff;
 }
 //===+++/Spoilers+++===
 
+// ===+++Button "UP"+++===
+.up {
+  position: fixed;
+  z-index: 999;
+  bottom: 100px;
+  right: 100px;
+  width: 45px;
+  height: 45px;
+  border-radius: 10px;
+  background: #004cff url("../img/Icons/up.svg") center no-repeat;
+  @include anim(0.3s, 0s);
+  @media (min-width: 1024px) {
+    &:hover {
+      box-shadow: inset 0px 0px 0px 2px #fff;
+    }
+  }
+  @media (max-width: 835px) {
+    bottom: 20px;
+    right: 20px;
+  }
+}
+// ===+++/Button "UP"+++===
+
 //****************************************

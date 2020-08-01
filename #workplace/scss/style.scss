@@ -130,12 +130,14 @@ $col: #00b5ab;
 		max-width: 485px;
 		margin: 0px 0px 60px 0px;
 		padding: 0px 5px;
-		font-size: 91px;
-		@include adpative-font(91, 31);
 		font-family: "Teko";
 		color: #fff;
+		font-size: 91px;
 		font-weight: 700;
 		line-height: 1.055;
+		@media (max-width: 1440px) {
+			@include adpative-font(91, 41);
+		}
 		@media (max-width: 835px) {
 			margin: 0px 0px 30px 0px;
 			text-align: center;
@@ -286,6 +288,9 @@ $col: #00b5ab;
 		font-weight: 700;
 		line-height: 60px;
 		text-transform: uppercase;
+		@media (max-width: 1440px) {
+			@include adpative-font(53, 33);
+		}
 		@media (max-width: 767px) {
 			margin: 0 auto 10px;
 		}
@@ -315,9 +320,6 @@ $col: #00b5ab;
 		flex: 1 1 33.333%;
 		padding: 0px 10px;
 		margin: 0px 0px 20px 0px;
-	}
-
-	&__item-product {
 	}
 }
 .filter {
@@ -385,7 +387,6 @@ $col: #00b5ab;
 	}
 	&__title {
 		color: #262626;
-		font-size: 21px;
 		font-weight: 400;
 		line-height: 24.75px;
 		margin: 0px 0px 27px 0px;
@@ -595,6 +596,9 @@ $col: #00b5ab;
 				font-size: 52px;
 				font-weight: 500;
 			}
+			@media (max-width: 1440px) {
+				@include adpative-font(97, 51);
+			}
 		}
 	}
 	@media (max-width: 485px) {
@@ -623,14 +627,15 @@ $col: #00b5ab;
 		line-height: 146.25px;
 		text-transform: uppercase;
 		margin: 0px 0px 60px 0px;
+		@media (max-width: 1440px) {
+			@include adpative-font(97, 51);
+		}
 		@media (max-width: 650px) {
 			margin: 0px 0px 30px 0px;
-			font-size: 80px;
 			line-height: 95px;
 		}
 		@media (max-width: 420px) {
 			margin: 0px 0px 10px 0px;
-			font-size: 50px;
 			line-height: 65px;
 		}
 	}

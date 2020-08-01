@@ -129,32 +129,17 @@ $(document).ready(function () {
 
 // === #Button "UP" ===
 
-// === Button "UP" from "luxdecor" ===
 $(window).scroll(function () {
 	var w = $(window).width();
-	if ($(window).scrollTop() > 50) {
-		$('#up').fadeIn(300);
+	if ($(window).scrollTop() > 200) {
+		$('.up').fadeIn(400);
 	} else {
-		$('#up').fadeOut(300);
+		$('.up').fadeOut(400);
 	}
 });
-$('#up').click(function (event) {
-	$('body,html').animate({ scrollTop: 0 }, 300);
+$('.up').click(function () {
+	$('body,html').animate({ scrollTop: 0 }, 1000);
 });
-// === /Button "UP" from "luxdecor" ===
-
-// === Enable up button ===
-// $(document).ready(function () {
-//   $(window).scroll(function () {
-//     if ($(this).scrollTop() > 200) {
-//       $('.product-desc__up').addClass('active-up');
-//     } else {
-//       $('.product-desc__up').removeClass('active-up');
-//     }
-//   });
-// });
-// === /Enable up button ===
-
 // === /Button "UP" ===
 
 //****************************************

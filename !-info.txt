@@ -18,7 +18,7 @@ d) !Product;
 d) filter;
 d) chek categories;
 !up-to:
-- адаптивный шрифт;
+d) адаптивный шрифт;
 d) cut image;
 d) corected margin&padding for text;
 !Save-form:
