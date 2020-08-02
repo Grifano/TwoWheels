@@ -410,3 +410,14 @@ $(document).on('click touchstart', function (e) {
 // === /Click anyware ===
 
 //****************************************
+// === Change class on window resize ===
+$(document).ready(function (event) {
+	var windowWidth = $('body').innerWidth(); // $(this) - значит к только этому ('.filter__item').
+	if (windowWidth < 1023) { // если class .filter__item имеет data-filter="1" - значит...
+		$('.info').hassClass('spoiler').$('.info__title').addClass('spoiler__title'); // ...показать колонки.
+	} else { // иначе...
+		$('.spoiler__title').removeClass('spoiler__title'); // ...спрятать все колонки.
+	}
+	return false;
+});
+// === /Change class on window resize ===

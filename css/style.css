@@ -336,6 +336,11 @@ h6 {
     margin: 0px 0px 20px 0px;
   }
 }
+@media (min-width: 1023px) {
+  .titles-footer {
+    pointer-events: none;
+  }
+}
 
 .bottom-footer {
   padding: 50px 0px 60px;
@@ -489,12 +494,16 @@ h6 {
 }
 
 .about-us {
-  max-width: 265px;
+  border: 1px solid red;
 }
-@media (min-width: 1023px) {
-  .about-us__title {
-    text-align: center;
+@media (max-width: 1023px) {
+  .about-us {
+    margin: 0;
+    min-width: 265px;
   }
+}
+.about-us__title {
+  max-width: 265px;
 }
 .about-us__text, .contacts__address {
   line-height: 33.75px;
@@ -510,6 +519,7 @@ h6 {
     margin: 0px 0px 20px 0px;
   }
 }
+
 @media (max-width: 1023px) {
   .follow-us__social {
     margin: 0px 0px 20px 0px;
@@ -1596,15 +1606,6 @@ h6 {
   top: 50%;
   left: 0px;
   transform: translate(0px, -50%);
-  opacity: 0;
-  visibility: hidden;
-}
-@media (max-width: 1023px) {
-  .spoiler__title::before,
-.spoiler__title::after {
-    opacity: 1;
-    visibility: visible;
-  }
 }
 
 .spoiler__title::before {
