@@ -441,7 +441,6 @@ h6 {
   }
   .footer__column:nth-child(2) {
     order: 1;
-    align-self: flex-end;
   }
   .footer__column:nth-child(3) {
     order: 2;
