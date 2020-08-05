@@ -1,43 +1,15 @@
 Start project: 20h30 07.07.20 -:>
 <!-- TODO: -->
-d) fonts;
-d) up;
-- click on any place;
-!Header:
-d) make cut img;
-- menu;
-- da for scroll window;
-d) header__bottom: not fixed;
-d) burger;
-d) responsive;
-d) acount (just icon);
-d) search (just icon);
-d) basket (just icon);
-d) !Fuel:
-d) !Product;
-d) filter;
-d) chek categories;
-!up-to:
-d) адаптивный шрифт;
-d) cut image;
-d) corected margin&padding for text;
-!Save-form:
-d) cut image;
-d) form like hover;
-- form vadidating;
-d) !Service:
-d) adaptive;
-!footer:
-- spoilers, make script JS addClass on max-width 997;
+- slider;
+- search input;
 <!-- *** ---JS--- ****************************************** -->
-#footer:
-- event click addClass active in spoiler__title;
+- click on any place;
+- form vadidating;
+- da for scroll window;
+
 <!-- ********************************************************* -->
 <!--!- To fix: -->
-- fix margin for fuel;
 - ipad hide-hover max-width: 1024px;
-- about-us click display: block; need display:flex;
-d) item-service by flex;
 <!-- ********************************************************* -->
 <!--?- #:>Test before prodaction: -->
 - jquery re-include!;

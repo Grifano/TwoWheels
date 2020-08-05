@@ -305,6 +305,9 @@ mainblock();
 // === Filtr & lighted active item ===
 $('.filter__link').click(function (event) {
 	var i = $(this).data('filter'); // $(this) - значит к только этому ('.filter__item').
+	if (!$(e.target).closest(".parent_block").length) {
+		$('.toggled_block').hide();
+	}
 	if (i == 1) { // если class .filter__item имеет data-filter="1" - значит...
 		$('.product__column').show(); // ...показать колонки.
 	} else { // иначе...
