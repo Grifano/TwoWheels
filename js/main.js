@@ -374,6 +374,15 @@ for (var i = 0; i < langLink.length; i++) {
 
 //****************************************
 
+// === Search ===
+let searchBtn = document.querySelector('.search__btn');
+searchBtn.addEventListener('click', function (e) {
+	let searchInput = document.querySelector('.search__input');
+	searchInput.classList.toggle('active');
+});
+// === /Search ===
+
+//****************************************
 //=== Transfer block ===
 // function myFunction(x) {
 // 	if (x.matches) { // If media query matches
