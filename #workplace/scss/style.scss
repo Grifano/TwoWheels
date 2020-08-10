@@ -85,7 +85,6 @@ $col: #00b5ab;
 .slider {
 	position: relative;
 	&__item {
-		background-color: #fff;
 		height: 100vh;
 		img {
 			width: 100%;
@@ -110,7 +109,6 @@ $col: #00b5ab;
 	min-height: 100vh;
 	position: relative;
 	&__slider {
-		border: 1px solid red;
 		position: absolute;
 		width: 100%;
 		height: 100%;

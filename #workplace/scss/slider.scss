@@ -33,22 +33,17 @@
 .slick-dots {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   margin: -10px 0px;
   position: absolute;
   top: 50%;
-  left: 0px;
   right: 110px;
-  bottom: 0px;
-  @include tr(0px, -50%, 0px);
   z-index: 15;
   @media (max-width: 835px) {
     flex-direction: row;
     margin: 0px -10px;
-    top: 0px;
-    left: 0px;
-    right: 0px;
-    bottom: 50px;
+    top: 94%;
+    right: 50%;
+    margin: 0px -41px 0px 0px;
   }
   li {
     padding: 10px 0px;

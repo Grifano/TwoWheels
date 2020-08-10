@@ -290,18 +290,10 @@ h6 {
 .slick-dots {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   margin: -10px 0px;
   position: absolute;
   top: 50%;
-  left: 0px;
   right: 110px;
-  bottom: 0px;
-  transform: translate3d(0px, -50%, 0px);
-  -webkit-transform: translate3d(0px, -50%, 0px);
-  -ms-transform: translate3d(0px, -50%, 0px);
-  -o-transform: translate3d(0px, -50%, 0px);
-  -moz-transform: translate3d(0px, -50%, 0px);
   z-index: 15;
   /* Элемент точки */
   /* Активная точка */
@@ -310,10 +302,9 @@ h6 {
   .slick-dots {
     flex-direction: row;
     margin: 0px -10px;
-    top: 0px;
-    left: 0px;
-    right: 0px;
-    bottom: 50px;
+    top: 94%;
+    right: 50%;
+    margin: 0px -41px 0px 0px;
   }
 }
 .slick-dots li {
@@ -701,7 +692,6 @@ h6 {
   position: relative;
 }
 .slider__item {
-  background-color: #fff;
   height: 100vh;
 }
 .slider__item img {
@@ -724,7 +714,6 @@ h6 {
   position: relative;
 }
 .main-screen__slider {
-  border: 1px solid red;
   position: absolute;
   width: 100%;
   height: 100%;
