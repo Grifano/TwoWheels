@@ -99,7 +99,8 @@
     }
   }
   &__account,
-  &__basket {
+  &__basket,
+  &__search {
     display: inline-block;
     @include anim(0.3s, 0s);
     @media (min-width: 1024px) {

@@ -35,10 +35,9 @@
 							</a>
 						</li>
 						<li>
-							<form action="#" method="GET" class="action-header__search search">
-								<input class="search__input" type="text" placeholder="Search.." name="search">
-								<button class="search__btn" type="submit"></button>
-							</form>
+							<a href="#" class="action-header__search" onclick="openSearch()">
+								<img src="img/Header/icons/02.svg" alt="search icon" />
+							</a>
 						</li>
 						<li>
 							<a href="#" class="action-header__basket">
@@ -475,7 +474,15 @@
 		</div>
 	</div>
 </footer>	</div>
-<!-- <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script> -->
+<div id="searchForm" class="search">
+  <div class="search__content">
+    <span class="search__close" onclick="closeSearch()"></span>
+    <form action="#" method="GET" class="search__form">
+      <input type="text" placeholder="Search.." name="search">
+      <button type="submit"></button>
+    </form>
+  </div>
+</div><!-- <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script> -->
 <script src="js/jquery-3.5.1.min.js"></script>
 <script src="js/slick.min.js"></script>
 <script src="js/main.js"></script></body>

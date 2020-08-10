@@ -373,13 +373,13 @@ for (var i = 0; i < langLink.length; i++) {
 
 //****************************************
 
-// === Search ===
-let searchBtn = document.querySelector('.search__btn');
-searchBtn.addEventListener('click', function (e) {
-	let searchInput = document.querySelector('.search__input');
-	searchInput.classList.toggle('active');
-});
-// === /Search ===
+// // === Search ===
+// let searchBtn = document.querySelector('.action-header__search');
+// searchBtn.addEventListener('click', function (e) {
+// 	let searchSearch = document.querySelector('.search');
+// 	searchSearch.classList.toggle('open');
+// });
+// // === /Search ===
 
 //****************************************
 //=== Transfer block ===
