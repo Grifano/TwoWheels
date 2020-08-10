@@ -287,10 +287,6 @@ h6 {
 }
 
 /* Лента слайдов */
-.slick-track {
-  display: flex;
-}
-
 .slick-dots {
   display: flex;
   flex-direction: column;
@@ -298,7 +294,9 @@ h6 {
   margin: -10px 0px;
   position: absolute;
   top: 50%;
+  left: 0px;
   right: 110px;
+  bottom: 0px;
   transform: translate3d(0px, -50%, 0px);
   -webkit-transform: translate3d(0px, -50%, 0px);
   -ms-transform: translate3d(0px, -50%, 0px);
@@ -308,8 +306,23 @@ h6 {
   /* Элемент точки */
   /* Активная точка */
 }
+@media (max-width: 835px) {
+  .slick-dots {
+    flex-direction: row;
+    margin: 0px -10px;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 50px;
+  }
+}
 .slick-dots li {
   padding: 10px 0px;
+}
+@media (max-width: 835px) {
+  .slick-dots li {
+    padding: 0px 10px;
+  }
 }
 .slick-dots button {
   width: 20px;
@@ -684,6 +697,19 @@ h6 {
   }
 }
 
+.slider {
+  position: relative;
+}
+.slider__item {
+  background-color: #fff;
+  height: 100vh;
+}
+.slider__item img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
 .wrapper {
   width: 100%;
   min-height: 100vh;
@@ -697,7 +723,8 @@ h6 {
   min-height: 100vh;
   position: relative;
 }
-.main-screen__bg {
+.main-screen__slider {
+  border: 1px solid red;
   position: absolute;
   width: 100%;
   height: 100%;
