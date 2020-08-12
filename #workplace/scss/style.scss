@@ -131,7 +131,7 @@ $col: #00b5ab;
 			align-items: center;
 		}
 		@media (max-width: 700px) {
-			padding: 60px 0px;
+			padding: 60px 0px 100px 0px;
 		}
 	}
 	&__top-main {
@@ -153,7 +153,7 @@ $col: #00b5ab;
 			@include adpative-font(91, 41);
 		}
 		@media (max-width: 835px) {
-			margin: 0px 0px 30px 0px;
+			margin: 0px;
 			text-align: center;
 		}
 	}
