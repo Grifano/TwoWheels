@@ -302,7 +302,7 @@ h6 {
   .slick-dots {
     flex-direction: row;
     margin: 0px -10px;
-    top: 94%;
+    top: 90%;
     right: 50%;
     margin: 0px -41px 0px 0px;
   }
@@ -736,6 +736,11 @@ h6 {
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
+  }
+}
+@media (max-width: 700px) {
+  .main-screen__container {
+    padding: 60px 0px;
   }
 }
 .main-screen__top-main {

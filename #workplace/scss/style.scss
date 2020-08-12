@@ -130,6 +130,9 @@ $col: #00b5ab;
 			justify-content: space-evenly;
 			align-items: center;
 		}
+		@media (max-width: 700px) {
+			padding: 60px 0px;
+		}
 	}
 	&__top-main {
 		margin: 0px 0px 100px 0px;
