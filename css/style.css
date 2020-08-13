@@ -715,11 +715,7 @@ h6 {
   top: 0;
   left: 0;
 }
-<<<<<<< HEAD
 @media (max-width: 700px) {
-=======
-@media (max-width: 426px) {
->>>>>>> slider
   .main-screen__slider {
     display: none;
   }
@@ -1651,6 +1647,7 @@ h6 {
 }
 
 .up {
+  display: none;
   position: fixed;
   z-index: 999;
   bottom: 100px;
