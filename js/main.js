@@ -132,7 +132,7 @@ $(document).ready(function () {
 
 $(window).scroll(function () {
 	var w = $(window).width();
-	if ($(window).scrollTop() > 200) {
+	if ($(window).scrollTop() > 500) {
 		$('.up').fadeIn(400);
 	} else {
 		$('.up').fadeOut(400);
@@ -222,43 +222,21 @@ $(document).ready(function () {
 // === #Slider ===
 $(document).ready(function () {
 	$('.slider').slick({
-		arrows: false,
 		dots: true,
-		slidesToShow: 1, // Количество слайдов для отображения сразу в потоке
-		slidesToScroll: 1, // Количество слайдов для пролиствыания за раз
-		speed: 1000, // скорость прокрутки слайдов
-		easing: 'linear', // вид анимации для прокрутки
-		infinite: true, // бесконечность прокрутки, по умолчанию true
-		initialSlide: 1, // указывает с какого слайда начинать прокрутку
-		autoplay: false, // автоматическая прокрутка слайдов.
-		autoplaySpeed: 1000, // скорость автоматической прокрутки
-		pauseOnFocus: true, // останавливает автоматическую прокрутку при нажатии на слайд
-		pauseOnHover: true, // останавливает автоматическую прокрутку при наведении
-		pauseOnDotsHover: true, // останавливает автоматическую прокрутку при наведении на точки
-		draggable: false, // отключает пролистывание на ПК с зажатой кнопкой мыши
-		swipe: false, // отключает пролистывание на tochscreen с зажатой кнопкой мыши
-		touchThreshold: 10, // растояние для перехода на следующий слайд, чем више тем меньше нужно протянуть слайд. Применянтся для touchscreen
-		touchMove: false, // вкл/выкл возможность двигать слайды 
-		waitForAnimate: false, // вкл/выкл ожидание выполнения анимации пролистывания. Для быстрого пролистывания false.
-		centerMode: false, // поумолчанию false. Ставит гоавный слайд всегда по центру
-		variableWidth: false, // уберает пространство между слайдами, слайд заполняется шириной контента внутри
-		rows: 1, // устанавлтивает количество обьектов в слайде в ряд. Тоесть один слайд имеет два ряда и в каждом ряде есть обьект
-		slidesPerRow: 1, // естанавливает количество слайдов в ряде
-		vertical: true, // меняет прокручевание на вертикальное. Но нужно убрать тогда display:flex если он задан для slide-track
-		verticalSwiping: false, // Включает вертикальное пролистывание ещгсрыскуут
-		// asNavFor: ".slider-big",
-		// adaptiveHeight: true, // ! что бы работало нужно добавить - .slick-track: align-items: flex-start!
+		slidesToShow: 1,
+		slidesToScroll: 1,
+		speed: 1000,
+		easing: 'linear',
+		infinite: true,
+		variableWidth: false,
+		vertical: true,
 		responsive: [
 			{
-				breakpoint: 835,
+				breakpoint: 427,
 				settings: {
-
+					dots: false,
 				}
 			},
-			{
-				breakpoint: 450,
-
-			}
 		],
 		appendDots: $('.main-screen')
 	});

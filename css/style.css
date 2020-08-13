@@ -279,14 +279,6 @@ h6 {
   left: 6px;
 }
 
-/* Слайдер */
-/* Слайдер запущен */
-/* Ограничивающая оболочка */
-.slick-list {
-  overflow: hidden;
-}
-
-/* Лента слайдов */
 .slick-dots {
   display: flex;
   flex-direction: column;
@@ -295,14 +287,12 @@ h6 {
   top: 50%;
   right: 110px;
   z-index: 15;
-  /* Элемент точки */
-  /* Активная точка */
 }
 @media (max-width: 835px) {
   .slick-dots {
     flex-direction: row;
     margin: 0px -10px;
-    top: 94%;
+    top: 85%;
     right: 50%;
     margin: 0px -41px 0px 0px;
   }
@@ -720,6 +710,11 @@ h6 {
   top: 0;
   left: 0;
 }
+@media (max-width: 426px) {
+  .main-screen__slider {
+    display: none;
+  }
+}
 .main-screen__content {
   min-height: 100vh;
   position: relative;
@@ -731,7 +726,7 @@ h6 {
 }
 @media (max-width: 835px) {
   .main-screen__container {
-    padding: 100px 0px 40px 0px;
+    padding: 80px 0px 100px 0px;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -739,7 +734,7 @@ h6 {
   }
 }
 .main-screen__top-main {
-  margin: 0px 0px 100px 0px;
+  margin: 0px 0px 180px 0px;
 }
 @media (max-width: 835px) {
   .main-screen__top-main {
@@ -768,7 +763,7 @@ h6 {
 }
 @media (max-width: 835px) {
   .main-screen__title {
-    margin: 0px 0px 30px 0px;
+    margin: 0px;
     text-align: center;
   }
 }
