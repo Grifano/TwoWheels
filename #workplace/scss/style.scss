@@ -114,7 +114,11 @@ $col: #00b5ab;
 		height: 100%;
 		top: 0;
 		left: 0;
+<<<<<<< HEAD
 		@media (max-width: 700px) {
+=======
+		@media (max-width: 426px) {
+>>>>>>> slider
 			display: none;
 		}
 	}
@@ -127,7 +131,7 @@ $col: #00b5ab;
 		padding: 120px 20px 40px 20px;
 		min-height: 100vh;
 		@media (max-width: 835px) {
-			padding: 100px 0px 40px 0px;
+			padding: 80px 0px 100px 0px;
 			display: flex;
 			flex-direction: column;
 			justify-content: space-evenly;
@@ -138,7 +142,7 @@ $col: #00b5ab;
 		}
 	}
 	&__top-main {
-		margin: 0px 0px 100px 0px;
+		margin: 0px 0px 180px 0px;
 		@media (max-width: 835px) {
 			margin: 0px 0px 30px 0px;
 		}
