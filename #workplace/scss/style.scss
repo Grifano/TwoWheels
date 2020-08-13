@@ -114,6 +114,9 @@ $col: #00b5ab;
 		height: 100%;
 		top: 0;
 		left: 0;
+		@media (max-width: 700px) {
+			display: none;
+		}
 	}
 	&__content {
 		min-height: 100vh;

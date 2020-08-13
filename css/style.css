@@ -307,6 +307,11 @@ h6 {
     margin: 0px -41px 0px 0px;
   }
 }
+@media (max-width: 700px) {
+  .slick-dots {
+    display: none;
+  }
+}
 .slick-dots li {
   padding: 10px 0px;
 }
@@ -719,6 +724,11 @@ h6 {
   height: 100%;
   top: 0;
   left: 0;
+}
+@media (max-width: 700px) {
+  .main-screen__slider {
+    display: none;
+  }
 }
 .main-screen__content {
   min-height: 100vh;
