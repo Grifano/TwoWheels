@@ -1,12 +1,13 @@
 Start project: 20h30 07.07.20 -:>
 <!-- TODO: -->
-- slider;
 - search input;
 <!-- *** ---JS--- ****************************************** -->
 - click on any place;
 - form vadidating;
-- da for scroll window;
-
+- up by replace code Jquery to JavaScript;
+- burger replace code Jquery to JavaScript;
+- goto replace code Jquery to JavaScript
+- Toggle class by windows width;
 <!-- ********************************************************* -->
 <!--!- To fix: -->
 - ipad hide-hover max-width: 1024px;
