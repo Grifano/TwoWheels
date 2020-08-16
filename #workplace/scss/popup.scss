@@ -1,52 +1,52 @@
 .search {
-  height: 100%;
   width: 100%;
   position: fixed;
   z-index: 999;
-  top: 0;
-  left: 0;
-  background-color: rgba(0, 0, 0, 0.9);
-  transform: scale(0);
+  top: 80px;
+  right: 0;
+  overflow: hidden;
+  opacity: 0;
   @include anim(0.3s, 0s);
-  &__close {
-    display: block;
-    position: relative;
-    cursor: pointer;
-    &::before,
-    &::after {
-      content: "";
-      display: block;
-      width: 30px;
-      height: 3px;
-      background-color: #fff;
-      position: absolute;
-      top: -50px;
-      right: 50%;
-      margin: 0px -15px 0px 0px;
-    }
-    &::before {
-      @include rotate(-45deg);
-    }
-    &::after {
-      @include rotate(45deg);
-    }
-  }
-  &__content {
-    position: relative;
-    top: -30%;
-    left: 0;
-    width: 60%;
-    margin: 0 auto;
-  }
+  // &__close {
+  //   display: block;
+  //   position: relative;
+  //   cursor: pointer;
+  //   &::before,
+  //   &::after {
+  //     content: "";
+  //     display: block;
+  //     width: 30px;
+  //     height: 3px;
+  //     background-color: #fff;
+  //     position: absolute;
+  //     top: -50px;
+  //     right: 50%;
+  //     margin: 0px -15px 0px 0px;
+  //   }
+  //   &::before {
+  //     @include rotate(-45deg);
+  //   }
+  //   &::after {
+  //     @include rotate(45deg);
+  //   }
+  // }
+  // &__content {
+  //   border: 1px solid red;
+  //   position: relative;
+  //   // top: 0;
+  //   // left: 0;
+  //   // width: 60%;
+  //   // margin: 0 auto;
+  // }
   &__form {
-    padding: 0px 10px;
     display: flex;
-    justify-content: center;
     height: 50px;
+    width: 100%;
     input[type="text"] {
       flex: 1 1 100%;
       padding: 15px;
       height: 100%;
+      min-width: 200px;
       font-size: 17px;
       background: white;
     }
@@ -57,12 +57,12 @@
       cursor: pointer;
       @include anim(0.3s, 0s);
       @media (max-width: 380px) {
-        flex-basis: 50px;
+        flex-basis: 80px;
       }
       @media (min-width: 1024px) {
         &:hover {
           box-shadow: inset 0px 0px 0px 5px #004cff;
-          background-color: transparent;
+          background-color: #262626;
         }
       }
     }

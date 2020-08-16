@@ -1,6 +1,6 @@
 Start project: 20h30 07.07.20 -:>
 <!-- TODO: -->
-- search input;
+- search close btn;
 <!-- *** ---JS--- ****************************************** -->
 - click on any place;
 - form vadidating;
@@ -10,8 +10,8 @@ Start project: 20h30 07.07.20 -:>
 - Toggle class by windows width;
 <!-- ********************************************************* -->
 <!--!- To fix: -->
+- slider off on rotate screen;
 - ipad hide-hover max-width: 1024px;
-- ibg to object-fit;
 - bad idea popup-search on fullscreen;
 <!-- ********************************************************* -->
 <!--?- #:>Test before prodaction: -->

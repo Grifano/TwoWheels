@@ -18,7 +18,7 @@
       background-color: #262626;
       overflow: auto;
     }
-    &.active {
+    &._show {
       top: 0;
     }
   }
@@ -53,38 +53,6 @@
     }
   }
 }
-.search {
-  display: flex;
-  align-items: center;
-  &__input {
-    display: none;
-    flex: 1 1 auto;
-    margin: 0px 10px 0px 0px;
-    padding: 5px 10px;
-    color: #707070;
-    font-size: 19px;
-    @include anim(0.3s, 0s);
-    &.active {
-      display: block;
-      @include anim(0.3s, 0s);
-    }
-  }
-
-  &__btn {
-    flex: 0 0 22px;
-    width: 22px;
-    height: 22px;
-    background: url("../img/Header/icons/02.svg") center no-repeat;
-    @include anim(0.3s, 0s);
-    @media (min-width: 1024px) {
-      &:hover {
-        display: inline-block;
-        @include scale(1.2);
-      }
-    }
-  }
-}
-
 .action-header {
   &__row {
     display: flex;

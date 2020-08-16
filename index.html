@@ -15,11 +15,11 @@
 
 	<main class="wrapper">
 <header class="header">
-	<nav class="header__menu"></nav>
+	<nav class="header__menu" id="showMenu"></nav>
 	<div class="header__top top-header">
 		<div class="container">
 			<div class="top-header__row">
-				<div class="top-header__burger burger">
+				<div class="top-header__burger burger" onclick="burgerIcon()">
 					<span></span>
 				</div>
 				<div class="top-header__text">
@@ -72,7 +72,7 @@
 								</a>
 							</div>
 							<div class="top-main__column">
-								<nav class="top-main__menu menu">
+								<nav class="top-main__menu menu" id="menu">
 									<ul data-da="header__menu,first,835" class="menu__list">
 										<li>
 											<a href="#" class="menu__link menu__link_active">Home</a>
@@ -483,15 +483,11 @@
 	</div>
 </footer>	</main>
 <div id="searchForm" class="search">
-  <div class="search__content">
-    <span class="search__close" onclick="closeSearch()"></span>
-    <form action="#" method="GET" class="search__form">
-      <input type="text" placeholder="Search.." name="search">
-      <button type="submit"></button>
-    </form>
-  </div>
-</div><script src="js/jquery-3.5.1.min.js"></script>
-<script src="js/swiper-bundle.js"></script>
+  <form action="#" method="GET" class="search__form">
+    <input type="text" placeholder="Search.." name="search">
+    <button type="submit" onclick="closeSearch()"></button>
+  </form>
+</div><script src="js/swiper-bundle.js"></script>
 <script src="js/main.js"></script></body>
 
 </html>

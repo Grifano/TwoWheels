@@ -5,7 +5,22 @@
 //****************************************
 
 // === #Button "UP" ===
+function burgerIcon() {
+	var element = document.getElementById("showMenu");
+	document.body.classList.toggle('_lock')
+	if (element.classList) {
+		element.classList.toggle("_show");
+	} else {
+		var classes = element.className.split(" ");
+		var i = classes.indexOf("_show");
 
+		if (i >= 0)
+			classes.splice(i, 1);
+		else
+			classes.push("_show");
+		element.className = classes.join(" ");
+	}
+}
 // === /Button "UP" ===
 
 //****************************************
@@ -96,19 +111,18 @@ for (var i = 0; i < btns.length; i++) {
 // === Change class on window resize ===
 
 // === /Change class on window resize ===
-
 //****************************************
-// === Search popup ===
 
+// === Search ===
 // Open the full screen search box
 function openSearch() {
-	document.getElementById("searchForm").style.transform = "scale(1)";
-	document.querySelector("body").style.overflow = "hidden";
+	document.getElementById("searchForm").style.overflow = "visible";
+	document.getElementById("searchForm").style.opacity = "1";
 }
 
 // Close the full screen search box
 function closeSearch() {
-	document.getElementById("searchForm").style.transform = "scale(0)";
-	document.querySelector("body").style.overflow = "auto";
+	document.getElementById("searchForm").style.overflow = "hidden";
+	document.getElementById("searchForm").style.opacity = "0";
 }
-// === /Search popup ===
+// === /Search ===
