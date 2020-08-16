@@ -232,6 +232,53 @@ h6 {
   }
 }
 
+.search {
+  display: flex;
+  align-items: center;
+}
+.search__input {
+  display: none;
+  flex: 1 1 auto;
+  margin: 0px 10px 0px 0px;
+  padding: 5px 10px;
+  color: #707070;
+  font-size: 19px;
+  -webkit-transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  -ms-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+.search__input.active {
+  display: block;
+  -webkit-transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  -ms-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+.search__btn {
+  flex: 0 0 22px;
+  width: 22px;
+  height: 22px;
+  background: url("../img/Header/icons/02.svg") center no-repeat;
+  -webkit-transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  -ms-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+@media (min-width: 1024px) {
+  .search__btn:hover {
+    display: inline-block;
+    -moz-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    -o-transform: scale(1.2);
+    transform: scale(1.2);
+  }
+}
+
 .action-header__row {
   display: flex;
   justify-content: center;
@@ -241,7 +288,10 @@ h6 {
 .action-header__row li {
   padding: 0px 15px;
 }
-.action-header__account, .action-header__search, .action-header__basket {
+.action-header__row li:nth-child(2) {
+  flex: 1 1 auto;
+}
+.action-header__account, .action-header__basket, .action-header__search {
   display: inline-block;
   -webkit-transition: all 0.3s ease 0s;
   -moz-transition: all 0.3s ease 0s;
@@ -250,7 +300,7 @@ h6 {
   transition: all 0.3s ease 0s;
 }
 @media (min-width: 1024px) {
-  .action-header__account:hover, .action-header__search:hover, .action-header__basket:hover {
+  .action-header__account:hover, .action-header__basket:hover, .action-header__search:hover {
     display: inline-block;
     -moz-transform: scale(1.2);
     -ms-transform: scale(1.2);
@@ -260,7 +310,7 @@ h6 {
   }
 }
 @media (max-width: 767px) {
-  .action-header__account, .action-header__search, .action-header__basket {
+  .action-header__account, .action-header__basket, .action-header__search {
     padding: 5px;
   }
 }
@@ -337,6 +387,94 @@ h6 {
 
 .swiper-pagination-bullet-active {
   border-color: #004cff;
+}
+
+.search {
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.9);
+  transform: scale(0);
+  -webkit-transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  -ms-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+.search__close {
+  display: block;
+  position: relative;
+  cursor: pointer;
+}
+.search__close::before, .search__close::after {
+  content: "";
+  display: block;
+  width: 30px;
+  height: 3px;
+  background-color: #fff;
+  position: absolute;
+  top: -50px;
+  right: 50%;
+  margin: 0px -15px 0px 0px;
+}
+.search__close::before {
+  -moz-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+.search__close::after {
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+.search__content {
+  position: relative;
+  top: -30%;
+  left: 0;
+  width: 60%;
+  margin: 0 auto;
+}
+.search__form {
+  padding: 0px 10px;
+  display: flex;
+  justify-content: center;
+  height: 50px;
+}
+.search__form input[type=text] {
+  flex: 1 1 100%;
+  padding: 15px;
+  height: 100%;
+  font-size: 17px;
+  background: white;
+}
+.search__form button {
+  flex: 0 0 100px;
+  height: 100%;
+  background: #004cff url("../img/Header/icons/02.svg") center no-repeat;
+  cursor: pointer;
+  -webkit-transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  -ms-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+@media (max-width: 380px) {
+  .search__form button {
+    flex-basis: 50px;
+  }
+}
+@media (min-width: 1024px) {
+  .search__form button:hover {
+    box-shadow: inset 0px 0px 0px 5px #004cff;
+    background-color: transparent;
+  }
 }
 
 .titles-footer {

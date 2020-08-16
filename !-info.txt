@@ -11,6 +11,7 @@ Start project: 20h30 07.07.20 -:>
 <!-- ********************************************************* -->
 <!--!- To fix: -->
 - ipad hide-hover max-width: 1024px;
+- ibg to object-fit;
 <!-- ********************************************************* -->
 <!--?- #:>Test before prodaction: -->
 - jquery re-include!;

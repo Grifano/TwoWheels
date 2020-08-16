@@ -1,187 +1,70 @@
-//=== popup =================================================================================================
-// .popup-overlay {
-// 	display: none;
-// 	width: 100%;
-// 	height: 100%;
-// 	position: fixed;
-// 	z-index: 999;
-// 	top: 0;
-// 	left: 0;
-// 	background: #000;
-// 	opacity: 0.5;
-// }
-
-// .popup {
-// 	display: none;
-// 	position: absolute;
-// 	top: 50%;
-// 	left: 50%;
-// 	@include tr(-50%, -50%, 0px);
-// 	z-index: 1000;
-// 	&__item {
-// 		display: none;
-// 		background-color: #eee;
-// 		padding: 10px;
-// 	}
-// }
-// === Popup by FLS===
-.popup {
-	-webkit-overflow-scrolling: touch;
-	background-color: rgba(0, 0, 0, 0.8);
-	display: none;
-	position: fixed !important;
-	top: 0px;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	overflow: auto;
-	z-index: 100;
-	&.active {
-		.popup-content {
-			@include scale(1);
-		}
-	}
-	&.show {
-		display: block;
-		.popup-content {
-			@include scale(1);
-		}
-	}
-}
-.popup-table {
-	height: 100%;
-	table-layout: fixed;
-	> .cell {
-		height: 100%;
-		vertical-align: middle;
-		padding: 30px 10px;
-	}
-}
-.popup-content {
-	@include scale(0);
-	@include anim(0.3s, 0s);
-	position: relative;
-	max-width: 500px;
-	margin: 0px auto;
-	background-color: #fff;
-}
-.popup-close {
-	width: 15px;
-	height: 15px;
-	position: absolute;
-	top: 0px;
-	right: 0px;
-	cursor: pointer;
-	background: url("../img/icons/close.png") 0 0 no-repeat;
-}
-.popup-video {
-	.popup-close {
-		width: 40px;
-		height: 40px;
-		background-color: #000;
-		top: 0;
-		right: 0;
-	}
-}
-.popup-video__value {
-	max-width: 99%;
-	height: 99%;
-	border: none;
-	iframe {
-		position: fixed;
-		top: 50%;
-		left: 50%;
-		width: 100%;
-		min-height: 100%;
-		height: auto;
-		transform: translateX(-50%) translateY(-50%);
-		background-size: cover;
-	}
-}
-
-.popup__txt {
-	font-size: 20px;
-	padding: 50px;
-}
-// === /Popup by FLS===
-
-// === Slider===
-.slider {
-  padding: 10px;
-  .slick-track {
-    display: flex;
-    align-items: flex-start;
-  }
-  .slick-list {
-    overflow: hidden;
-  }
-  /* Стрелка */
-  .slick-arrow {
-    font-size: 0;
-    width: 50px;
-    height: 50px;
-    background-color: transparent;
-    position: absolute;
-    top: 50%;
-    margin: -25px 0px 0px 0px;
-    z-index: 999;
+.search {
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.9);
+  transform: scale(0);
+  @include anim(0.3s, 0s);
+  &__close {
+    display: block;
+    position: relative;
+    cursor: pointer;
     &::before,
     &::after {
       content: "";
       display: block;
-      width: 100%;
-      height: 5px;
+      width: 30px;
+      height: 3px;
       background-color: #fff;
       position: absolute;
-      bottom: 0;
-      left: 0;
-      transform-origin: right;
-      @include rotate(27.5deg);
-      @include anim(0.5s, 0s);
+      top: -50px;
+      right: 50%;
+      margin: 0px -15px 0px 0px;
+    }
+    &::before {
+      @include rotate(-45deg);
     }
     &::after {
-      top: 0;
-      @include rotate(-27.5deg);
+      @include rotate(45deg);
     }
-    &:hover {
-      &::before,
-      &::after {
-        background-color: #00b5ab;
+  }
+  &__content {
+    position: relative;
+    top: -30%;
+    left: 0;
+    width: 60%;
+    margin: 0 auto;
+  }
+  &__form {
+    padding: 0px 10px;
+    display: flex;
+    justify-content: center;
+    height: 50px;
+    input[type="text"] {
+      flex: 1 1 100%;
+      padding: 15px;
+      height: 100%;
+      font-size: 17px;
+      background: white;
+    }
+    button {
+      flex: 0 0 100px;
+      height: 100%;
+      background: #004cff url("../img/Header/icons/02.svg") center no-repeat;
+      cursor: pointer;
+      @include anim(0.3s, 0s);
+      @media (max-width: 380px) {
+        flex-basis: 50px;
+      }
+      @media (min-width: 1024px) {
+        &:hover {
+          box-shadow: inset 0px 0px 0px 5px #004cff;
+          background-color: transparent;
+        }
       }
     }
   }
-  /* Стрелка в лево */
-  .slick-arrow.slick-prev {
-    left: 10px;
-  }
-  /* Стрелка в право */
-  .slick-arrow.slick-next {
-    right: 10px;
-    &::before,
-    &::after {
-      transform-origin: left;
-      @include rotate(-27.5deg);
-    }
-    &::after {
-      top: 0;
-      @include rotate(27.5deg);
-    }
-  }
-  &__item {
-    text-align: center;
-    background-color: #aaa;
-  }
-  &__image {
-    display: inline-block;
-    max-width: 500px;
-    img {
-      display: block;
-      width: 100%;
-      height: 100%;
-      object-fit: contain;
-    }
-  }
 }
-// === /Slider===
-
-//====================================================================================================
