@@ -451,6 +451,12 @@ $col: #00b5ab;
 		height: 100%;
 		top: 0;
 		left: 0;
+		img {
+			display: block;
+			max-width: 100%;
+			height: 100%;
+			object-fit: cover;
+		}
 	}
 }
 .description-image {
@@ -458,7 +464,6 @@ $col: #00b5ab;
 	display: flex;
 	flex-direction: column;
 	position: relative;
-
 	&__body {
 		padding: 11% 4% 5% 15%;
 		width: 100%;
@@ -552,6 +557,12 @@ $col: #00b5ab;
 		top: 0;
 		left: 0;
 		z-index: 1;
+		img {
+			display: block;
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+		}
 	}
 }
 .up-to {
@@ -709,6 +720,12 @@ $col: #00b5ab;
 		height: 100%;
 		top: 0;
 		left: 0;
+		img {
+			display: block;
+			max-width: 100%;
+			height: 100%;
+			object-fit: cover;
+		}
 	}
 }
 .service {
