@@ -699,6 +699,45 @@ h6 {
   }
 }
 
+.filter {
+  padding: 0px 0px 48px 0px;
+  border-bottom: 2px solid #b2b2b2;
+}
+@media (max-width: 767px) {
+  .filter {
+    padding: 0px 0px 28px 0px;
+  }
+}
+.filter__list {
+  max-width: 500px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+@media (max-width: 415px) {
+  .filter__list {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .filter__list li {
+    margin: 0px 0px 20px 0px;
+  }
+  .filter__list li:last-child {
+    margin: 0;
+  }
+}
+.filter__link {
+  color: #f1f1f1;
+  font-size: 21px;
+  font-weight: 400;
+  line-height: 24.75px;
+  cursor: pointer;
+}
+.filter__link.active {
+  color: #0077ff;
+}
+
 .wrapper {
   width: 100%;
   min-height: 100vh;
@@ -941,7 +980,7 @@ h6 {
     padding: 15px 0px;
   }
 }
-.product__title {
+.product__title, .item-product__label-tmp {
   text-align: center;
   max-width: 280px;
   margin: 0 auto 60px;
@@ -953,17 +992,17 @@ h6 {
   text-transform: uppercase;
 }
 @media (max-width: 1440px) and (max-width: 767px) {
-  .product__title {
+  .product__title, .item-product__label-tmp {
     font-size: calc(33px + 34 * ((100vw - 320px) / 1440));
   }
 }
 @media (max-width: 1440px) and (min-width: 767px) {
-  .product__title {
+  .product__title, .item-product__label-tmp {
     font-size: calc(33px + 20 * (100vw / 1440));
   }
 }
 @media (max-width: 767px) {
-  .product__title {
+  .product__title, .item-product__label-tmp {
     margin: 0 auto 10px;
   }
 }
@@ -992,48 +1031,13 @@ h6 {
   }
 }
 .product__column {
+  display: none;
   flex: 1 1 33.333%;
   padding: 0px 10px;
   margin: 0px 0px 20px 0px;
 }
-
-.filter {
-  padding: 0px 0px 48px 0px;
-  border-bottom: 2px solid #b2b2b2;
-}
-@media (max-width: 767px) {
-  .filter {
-    padding: 0px 0px 28px 0px;
-  }
-}
-.filter__list {
-  max-width: 500px;
-  margin: 0 auto;
-  display: flex;
-  justify-content: space-between;
-}
-@media (max-width: 415px) {
-  .filter__list {
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  .filter__list li {
-    margin: 0px 0px 20px 0px;
-  }
-  .filter__list li:last-child {
-    margin: 0;
-  }
-}
-.filter__link {
-  color: #f1f1f1;
-  font-size: 21px;
-  font-weight: 400;
-  line-height: 24.75px;
-  cursor: pointer;
-}
-.filter__link.active {
-  color: #0077ff;
+.product__column.show {
+  display: block;
 }
 
 .item-product {
