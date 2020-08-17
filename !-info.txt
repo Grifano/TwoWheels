@@ -5,14 +5,11 @@ Start project: 20h30 07.07.20 -:>
 - click on any place;
 - form vadidating;
 - up by replace code Jquery to JavaScript;
-- burger replace code Jquery to JavaScript;
 - goto replace code Jquery to JavaScript
 - Toggle class by windows width;
 <!-- ********************************************************* -->
 <!--!- To fix: -->
-- slider off on rotate screen;
 - ipad hide-hover max-width: 1024px;
-- bad idea popup-search on fullscreen;
 <!-- ********************************************************* -->
 <!--?- #:>Test before prodaction: -->
 - jquery re-include!;

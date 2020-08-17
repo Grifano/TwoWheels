@@ -22,21 +22,21 @@ $burger_icon: #fff;
   &::before {
     top: 0;
   }
-  &.active::before {
+  &._active::before {
     top: 9px;
     transform: rotate(45deg);
   }
   &::after {
     bottom: 0;
   }
-  &.active::after {
+  &._active::after {
     transform: rotate(-45deg);
     bottom: 9px;
   }
   span {
     top: 9px;
   }
-  &.active span {
+  &._active span {
     display: none;
   }
   @media (max-width: 835px) {
@@ -44,19 +44,6 @@ $burger_icon: #fff;
   }
 }
 //===+++/Burger+++===
-
-//****************************************
-
-//===+++ibg+++===
-.ibg {
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  img {
-    display: none;
-  }
-}
-//===+++/ibg+++===
 
 //****************************************
 

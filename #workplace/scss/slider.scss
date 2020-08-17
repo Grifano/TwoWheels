@@ -25,7 +25,7 @@
     margin: 0px -43px 0px 0px;
     @include rotate(0deg);
   }
-  @media (max-width: 425px) {
+  @media (max-width: 425px), (max-height: 400px) {
     display: none;
   }
 }

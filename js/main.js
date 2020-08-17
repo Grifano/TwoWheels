@@ -1,27 +1,18 @@
 //****************************************
 // === #Burger icon click action ===
-
+function burgerIcon() {
+	document.body.classList.toggle('_lock')
+	var menuShow = document.getElementById("showMenu");
+	menuShow.classList.toggle('_show');
+	var burgerClose = document.getElementById('burgerClose');
+	burgerClose.classList.toggle('_active');
+}
 // === /Burger icon click action ===
 
 //****************************************
 
 // === #Button "UP" ===
-function burgerIcon() {
-	var element = document.getElementById("showMenu");
-	document.body.classList.toggle('_lock')
-	if (element.classList) {
-		element.classList.toggle("_show");
-	} else {
-		var classes = element.className.split(" ");
-		var i = classes.indexOf("_show");
 
-		if (i >= 0)
-			classes.splice(i, 1);
-		else
-			classes.push("_show");
-		element.className = classes.join(" ");
-	}
-}
 // === /Button "UP" ===
 
 //****************************************
@@ -115,16 +106,11 @@ for (var i = 0; i < btns.length; i++) {
 //****************************************
 
 // === Search ===
-// Open the full screen search box
 function openSearch() {
-	document.getElementById("searchForm").style.overflow = "visible";
-	document.getElementById("searchForm").style.opacity = "1";
-}
-
-// Close the full screen search box
-function closeSearch() {
-	document.getElementById("searchForm").style.overflow = "hidden";
-	document.getElementById("searchForm").style.opacity = "0";
+	var searchIcon = document.getElementById("searchIcon");
+	searchIcon.classList.toggle('_change');
+	var searchForm = document.getElementById("searchForm");
+	searchForm.classList.toggle('_show');
 }
 // === /Search ===
 

@@ -4,40 +4,13 @@
   z-index: 999;
   top: 80px;
   right: 0;
-  overflow: hidden;
+  visibility: hidden;
   opacity: 0;
   @include anim(0.3s, 0s);
-  // &__close {
-  //   display: block;
-  //   position: relative;
-  //   cursor: pointer;
-  //   &::before,
-  //   &::after {
-  //     content: "";
-  //     display: block;
-  //     width: 30px;
-  //     height: 3px;
-  //     background-color: #fff;
-  //     position: absolute;
-  //     top: -50px;
-  //     right: 50%;
-  //     margin: 0px -15px 0px 0px;
-  //   }
-  //   &::before {
-  //     @include rotate(-45deg);
-  //   }
-  //   &::after {
-  //     @include rotate(45deg);
-  //   }
-  // }
-  // &__content {
-  //   border: 1px solid red;
-  //   position: relative;
-  //   // top: 0;
-  //   // left: 0;
-  //   // width: 60%;
-  //   // margin: 0 auto;
-  // }
+  &._show {
+    visibility: visible;
+    opacity: 1;
+  }
   &__form {
     display: flex;
     height: 50px;

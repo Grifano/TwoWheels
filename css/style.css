@@ -267,6 +267,35 @@ h6 {
     padding: 5px;
   }
 }
+.action-header__search {
+  color: #fff;
+  position: relative;
+}
+.action-header__search::before {
+  content: "X";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  font-weight: 600;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: #262626;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  -ms-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+.action-header__search._change::before {
+  opacity: 1;
+  visibility: visible;
+}
 .action-header__basket {
   position: relative;
 }
@@ -321,7 +350,7 @@ h6 {
     transform: rotate(0deg);
   }
 }
-@media (max-width: 425px) {
+@media (max-width: 425px), (max-height: 400px) {
   .swiper-pagination {
     display: none;
   }
@@ -348,13 +377,17 @@ h6 {
   z-index: 999;
   top: 80px;
   right: 0;
-  overflow: hidden;
+  visibility: hidden;
   opacity: 0;
   -webkit-transition: all 0.3s ease 0s;
   -moz-transition: all 0.3s ease 0s;
   -ms-transition: all 0.3s ease 0s;
   -o-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
+}
+.search._show {
+  visibility: visible;
+  opacity: 1;
 }
 .search__form {
   display: flex;
@@ -811,7 +844,7 @@ h6 {
   top: 0;
   left: 0;
 }
-@media (max-width: 425px) {
+@media (max-width: 425px), (max-height: 400px) {
   .main-screen__swiper {
     display: none;
   }
@@ -1647,36 +1680,27 @@ h6 {
 .burger::before {
   top: 0;
 }
-.burger.active::before {
+.burger._active::before {
   top: 9px;
   transform: rotate(45deg);
 }
 .burger::after {
   bottom: 0;
 }
-.burger.active::after {
+.burger._active::after {
   transform: rotate(-45deg);
   bottom: 9px;
 }
 .burger span {
   top: 9px;
 }
-.burger.active span {
+.burger._active span {
   display: none;
 }
 @media (max-width: 835px) {
   .burger {
     display: block;
   }
-}
-
-.ibg {
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-.ibg img {
-  display: none;
 }
 
 @media (max-width: 1023px) {
