@@ -3,13 +3,11 @@ Start project: 20h30 07.07.20 -:>
 <!-- *** ---JS--- ****************************************** -->
 - click on any place;
 - form vadidating;
-- up by replace code Jquery to JavaScript;
 - goto replace code Jquery to JavaScript
 - Toggle class by windows width;
 <!-- ********************************************************* -->
 <!--!- To fix: -->
 - ipad hide-hover max-width: 1024px;
-- Smooth scroll for up;
 <!-- ********************************************************* -->
 <!--?- #:>Test before prodaction: -->
 - jquery re-include!;
