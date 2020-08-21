@@ -1,6 +1,5 @@
 Start project: 20h30 07.07.20 -:>
 <!-- TODO: -->
-- search close btn;
 <!-- *** ---JS--- ****************************************** -->
 - click on any place;
 - form vadidating;
@@ -10,6 +9,7 @@ Start project: 20h30 07.07.20 -:>
 <!-- ********************************************************* -->
 <!--!- To fix: -->
 - ipad hide-hover max-width: 1024px;
+- Smooth scroll for up;
 <!-- ********************************************************* -->
 <!--?- #:>Test before prodaction: -->
 - jquery re-include!;

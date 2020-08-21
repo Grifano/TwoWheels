@@ -93,7 +93,6 @@ $burger_icon: #fff;
 
 // ===+++Button "UP"+++===
 .up {
-  display: none;
   position: fixed;
   z-index: 999;
   bottom: 100px;
@@ -103,6 +102,7 @@ $burger_icon: #fff;
   border-radius: 10px;
   background: #004cff url("../img/Icons/up.svg") center no-repeat;
   @include anim(0.3s, 0s);
+  @include scale(0);
   @media (min-width: 1024px) {
     &:hover {
       box-shadow: inset 0px 0px 0px 2px #fff;
