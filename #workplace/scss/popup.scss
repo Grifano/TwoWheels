@@ -1,12 +1,16 @@
 .search {
-  width: 100%;
+  width: 90%;
   position: fixed;
   z-index: 999;
   top: 80px;
-  right: 0;
+  right: 50%;
+  @include tr(50%, 0px, 0px);
   visibility: hidden;
   opacity: 0;
   @include anim(0.3s, 0s);
+  @media (max-width: 700px) {
+    top: 60px;
+  }
   &._show {
     visibility: visible;
     opacity: 1;

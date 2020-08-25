@@ -8,9 +8,7 @@ function burgerIcon() {
 	burgerClose.classList.toggle('_active');
 }
 // === /Burger icon click action ===
-
 //****************************************
-
 // === #Button "UP" ===
 upBtn = document.getElementById("upBtn");
 
@@ -57,9 +55,7 @@ Math.easeInOutQuad = function (t, b, c, d) {
 	return -c / 2 * (t * (t - 2) - 1) + b;
 };
 // === /Button "UP" ===
-
 //****************************************
-
 // === #Slider ===
 var mySwiper = new Swiper('.swiper-container', {
 	// Optional parameters
@@ -73,9 +69,7 @@ var mySwiper = new Swiper('.swiper-container', {
 	},
 })
 // === /Slider ===
-
 //****************************************
-
 // === Filtr & lighted active item ===
 filterSelection("all")
 function filterSelection(c) {
@@ -124,16 +118,12 @@ for (var i = 0; i < btns.length; i++) {
 		this.className += " active";
 	});
 }
-// === Filtr & lighted active item ===
-
+// === /Filtr & lighted active item ===
 //****************************************
-
 // === goto переход на следусчий блок при нажатии ===
 
 // === /goto переход на следусчий блок при нажатии ===
-
 //****************************************
-
 // === Click anyware ===
 // $(document).on('click touchstart', function (e) {
 // 	if (!$(e.target).is("*")) {
@@ -141,13 +131,11 @@ for (var i = 0; i < btns.length; i++) {
 // 	};
 // });
 // === /Click anyware ===
-
 //****************************************
 // === Change class on window resize ===
 
 // === /Change class on window resize ===
 //****************************************
-
 // === Search ===
 function openSearch() {
 	var searchIcon = document.getElementById("searchIcon");
@@ -156,6 +144,14 @@ function openSearch() {
 	searchForm.classList.toggle('_show');
 }
 // === /Search ===
+//****************************************
+// === Spoilers ===
+function spoilerFooter() {
+	var spoilerBtn = document.querySelectorAll('.titles-footer');
+	spoilerBtn.style.border = "1px solid red";
+}
+// === /Spoilers ===
+//****************************************
 
 // Dynamic Adapt v.1
 // HTML data-da="where(uniq class name),position(digi),when(breakpoint)"
