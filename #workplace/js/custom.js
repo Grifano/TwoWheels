@@ -145,9 +145,27 @@ function openSearch() {
 // === /Search ===
 //****************************************
 // === Spoilers ===
-function spoilerFooter() {
-	var spoilerBtn = document.querySelectorAll('.titles-footer');
-	spoilerBtn.style.border = "1px solid red";
-}
+var spoilerBtn = document.getElementById("spoilerBtn");
+var spoilerId = document.getElementById('spoiler');
+var spoilerItem = document.getElementById("spoilerItem");
+
+window.addEventListener("resize", function (event) {
+	if ((document.body.clientWidth <= 1023) && (spoilerId.classList.contains('spoiler'))) {
+		spoilerBtn.classList.add('spoiler__title');
+	} else {
+		spoilerBtn.classList.remove('spoiler__title');
+	}
+});
+
+spoilerBtn.addEventListener("click", function () {
+	spoilerBtn.classList.toggle('_show');
+});
+spoilerBtn.addEventListener("click", function () {
+	spoilerItem.classList.toggle('_show');
+});
+
+// function spoilerFooter() {
+// 	spoilerBtn.style.border = "1px solid red";
+// }
 // === /Spoilers ===
 //****************************************

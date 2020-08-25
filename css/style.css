@@ -1717,6 +1717,9 @@ h6 {
   .spoiler__item {
     display: none;
   }
+  .spoiler__item._show {
+    display: block;
+  }
 }
 
 .spoiler__title {
@@ -1746,16 +1749,16 @@ h6 {
   transform: rotate(-45deg);
 }
 
-.spoiler__title.active::before,
-.spoiler__title.active::after {
+.spoiler__title._show::before,
+.spoiler__title._show::after {
   background-color: #fff;
 }
 
-.spoiler__title.active::before {
+.spoiler__title._show::before {
   transform: rotate(-45deg);
 }
 
-.spoiler__title.active::after {
+.spoiler__title._show::after {
   transform: rotate(45deg);
 }
 

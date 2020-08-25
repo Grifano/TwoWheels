@@ -54,6 +54,9 @@ $burger_icon: #fff;
   // margin: 0px 0px 20px 0px;
   @media (max-width: 1023px) {
     display: none;
+    &._show {
+      display: block;
+    }
   }
 }
 .spoiler__title {
@@ -79,14 +82,14 @@ $burger_icon: #fff;
   left: -20px;
   transform: rotate(-45deg);
 }
-.spoiler__title.active::before,
-.spoiler__title.active::after {
+.spoiler__title._show::before,
+.spoiler__title._show::after {
   background-color: #fff;
 }
-.spoiler__title.active::before {
+.spoiler__title._show::before {
   transform: rotate(-45deg);
 }
-.spoiler__title.active::after {
+.spoiler__title._show::after {
   transform: rotate(45deg);
 }
 //===+++/Spoilers+++===
