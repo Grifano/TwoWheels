@@ -170,6 +170,12 @@ spoilerBtn.addEventListener("click", function () {
 // }
 // === /Spoilers ===
 //****************************************
+// === Form validating ===
+function formValidating() {
+	var email = document.forms["Subscribe"]["email"]
+}
+// === /Form validating ===
+//****************************************
 
 // Dynamic Adapt v.1
 // HTML data-da="where(uniq class name),position(digi),when(breakpoint)"

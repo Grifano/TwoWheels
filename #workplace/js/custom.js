@@ -169,3 +169,9 @@ spoilerBtn.addEventListener("click", function () {
 // }
 // === /Spoilers ===
 //****************************************
+// === Form validating ===
+function formValidating() {
+	var email = document.forms["Subscribe"]["email"]
+}
+// === /Form validating ===
+//****************************************
