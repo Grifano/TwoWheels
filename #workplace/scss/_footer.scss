@@ -221,7 +221,9 @@
     li {
       margin: 0px 0px 12px 0px;
       &:last-child {
-        margin: 0;
+        @media (min-width: 660px) {
+          margin: 0;
+        }
       }
     }
   }
