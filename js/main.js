@@ -146,14 +146,26 @@ function openSearch() {
 // === /Search ===
 //****************************************
 // === Spoilers ===
-$('.js-tab-trigger').on('click', function () {
-  var tabName = $(this).data('tab'),
-    tab = $('.js-tab-content[data-tab="' + tabName + '"]');
-  $('.js-tab-trigger.open-tab-pd').removeClass('open-tab-pd');
-  $(this).addClass('open-tab-pd');
-  $('.js-tab-content.open-tab-pd').removeClass('open-tab-pd');
-  tab.addClass('open-tab-pd');
-});
+function spoiler(evt, tabName) {
+  // Declare all variables
+  var i, tabcontent, tablinks;
+
+  // Get all elements with class="tabcontent" and hide them
+  tabcontent = document.getElementsByClassName("js-tab-content");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  // Get all elements with class="tablinks" and remove the class "active"
+  tablinks = document.getElementsByClassName("js-tab-trigger");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active-tab", "");
+  }
+
+  // Show the current tab, and add an "active" class to the button that opened the tab
+  document.getElementById(tabName).style.display = "block";
+  evt.currentTarget.className += " active-tab";
+}
+
 // === /Spoilers ===
 //****************************************
 // Dynamic Adapt v.1

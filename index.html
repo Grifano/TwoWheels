@@ -399,9 +399,10 @@
 			<div class="container">
 				<div class="footer__top">
 					<div class="footer__column">
-						<div class="footer__about-us about-us js-tab-trigger active-tab-pd">
-							<h3 class="about-us__title titles-footer">About us</h3>
-							<div class="about-us__text js-tab-content open-tab-pd" data-tab="1">
+						<div class="footer__about-us about-us">
+							<h3 onclick="spoiler(event, 'about-us')" class="about-us__title titles-footer js-tab-trigger">About us
+							</h3>
+							<div id="about-us" class="about-us__text js-tab-content">
 								<p>
 									The new hero pieces bring instant fashion credibility. Bright florals clash with camouflage.
 								</p>
@@ -420,9 +421,9 @@
 						</div>
 					</div>
 					<div class="footer__column">
-						<div class="footer__info info js-tab-trigger">
-							<h3 class="info__title titles-footer">Information</h3>
-							<ul class="info__list js-tab-content open-tab-pd" data-tab="2">
+						<div class="footer__info info">
+							<h3 onclick="spoiler(event, 'info')" class="info__title titles-footer js-tab-trigger">Information</h3>
+							<ul id="info" class="info__list js-tab-content">
 								<li><a href="#" class="info__link">Profile</a></li>
 								<li><a href="#" class="info__link">About us</a></li>
 								<li><a href="#" class="info__link">Contact</a></li>
@@ -432,9 +433,9 @@
 						</div>
 					</div>
 					<div class="footer__column">
-						<div class="footer__returns returns js-tab-trigger">
-							<h3 class="returns__title titles-footer">Returns</h3>
-							<ul class="returns__list js-tab-content open-tab-pd" data-tab="3">
+						<div class="footer__returns returns ">
+							<h3 onclick="spoiler(event, 'returns')" class="returns__title titles-footer js-tab-trigger">Returns</h3>
+							<ul id="returns" class="returns__list js-tab-content test">
 								<li><a href="#" class="returns__link">FAQs</a></li>
 								<li><a href="#" class="returns__link">Size Guide</a></li>
 								<li><a href="#" class="returns__link">Contact us</a></li>
@@ -492,7 +493,6 @@
 	</div>
 </body>
 
-<script src="js/jquery-3.5.1.min.js"></script>
 <script src="js/swiper-bundle.js"></script>
 <script src="js/main.js"></script>
 
