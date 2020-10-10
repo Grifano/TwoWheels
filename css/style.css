@@ -118,6 +118,30 @@ input::-ms-clear {
   display: none;
 }
 
+textarea,
+input[type="text"],
+input[type="button"],
+input[type="submit"] {
+  -webkit-appearance: none;
+  border-radius: 0;
+}
+
+input:focus::-webkit-input-placeholder {
+  opacity: 0;
+}
+
+input:focus:-ms-input-placeholder {
+  opacity: 0;
+}
+
+input:focus::-ms-input-placeholder {
+  opacity: 0;
+}
+
+input:focus::placeholder {
+  opacity: 0;
+}
+
 button {
   cursor: pointer;
 }
